@@ -1,0 +1,13 @@
+# Shopify Theme Check configuration
+# https://shopify.dev/docs/themes/tools/theme-check
+extends: theme-check:recommended
+
+# Tell Theme Check where the theme root is (repo root).
+root: "."
+
+ignore:
+  # Generated / minified vendor bundles — not worth linting.
+  - assets/theme.js
+  - assets/theme.css
+  - assets/vendor.js
+  - assets/photoswipe.min.js
