@@ -1,0 +1,341 @@
+{% doc %}
+  @prompt
+    Make an eye catching Black Friday Sales Banner with a block heading and subtext that is made for desktop and mobile. make sure it suite the current theme
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-bf-banner-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    background: {{ block.settings.background_color }};
+    overflow: hidden;
+    padding: {{ block.settings.padding_desktop }}px 20px;
+  }
+
+  .ai-bf-banner-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-bf-banner-heading-{{ ai_gen_id }} {
+    font-family: var(--font-heading-family);
+    font-weight: 700;
+    font-size: {{ block.settings.heading_size_desktop }}px;
+    line-height: 1;
+    color: {{ block.settings.heading_color }};
+    margin: 0 0 {{ block.settings.spacing_between }}px 0;
+    letter-spacing: -0.02em;
+  }
+
+  .ai-bf-banner-subtext-{{ ai_gen_id }} {
+    font-family: var(--font-body-family);
+    font-size: {{ block.settings.subtext_size_desktop }}px;
+    line-height: 1.4;
+    color: {{ block.settings.subtext_color }};
+    margin: 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ai-bf-banner-accent-{{ ai_gen_id }} {
+    color: {{ block.settings.accent_color }};
+  }
+
+  .ai-bf-banner-bg-pattern-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: {{ block.settings.pattern_opacity | divided_by: 100.0 }};
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .ai-bf-banner-circle-{{ ai_gen_id }} {
+    position: absolute;
+    border-radius: 50%;
+    background: {{ block.settings.pattern_color }};
+  }
+
+  .ai-bf-banner-circle-1-{{ ai_gen_id }} {
+    width: 300px;
+    height: 300px;
+    top: -150px;
+    left: -100px;
+  }
+
+  .ai-bf-banner-circle-2-{{ ai_gen_id }} {
+    width: 200px;
+    height: 200px;
+    bottom: -100px;
+    right: -50px;
+  }
+
+  .ai-bf-banner-circle-3-{{ ai_gen_id }} {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-bf-banner-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_mobile }}px 16px;
+    }
+
+    .ai-bf-banner-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size_mobile }}px;
+      margin-bottom: {{ block.settings.spacing_between | times: 0.8 }}px;
+    }
+
+    .ai-bf-banner-subtext-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtext_size_mobile }}px;
+    }
+
+    .ai-bf-banner-circle-1-{{ ai_gen_id }} {
+      width: 200px;
+      height: 200px;
+      top: -100px;
+      left: -80px;
+    }
+
+    .ai-bf-banner-circle-2-{{ ai_gen_id }} {
+      width: 150px;
+      height: 150px;
+      bottom: -75px;
+      right: -40px;
+    }
+
+    .ai-bf-banner-circle-3-{{ ai_gen_id }} {
+      width: 100px;
+      height: 100px;
+    }
+  }
+{% endstyle %}
+
+<div class="ai-bf-banner-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.show_pattern %}
+    <div class="ai-bf-banner-bg-pattern-{{ ai_gen_id }}">
+      <div class="ai-bf-banner-circle-{{ ai_gen_id }} ai-bf-banner-circle-1-{{ ai_gen_id }}"></div>
+      <div class="ai-bf-banner-circle-{{ ai_gen_id }} ai-bf-banner-circle-2-{{ ai_gen_id }}"></div>
+      <div class="ai-bf-banner-circle-{{ ai_gen_id }} ai-bf-banner-circle-3-{{ ai_gen_id }}"></div>
+    </div>
+  {% endif %}
+
+  <div class="ai-bf-banner-container-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-bf-banner-heading-{{ ai_gen_id }}">
+        {{ block.settings.heading }}
+      </h2>
+    {% endif %}
+
+    {% if block.settings.subtext != blank %}
+      <div class="ai-bf-banner-subtext-{{ ai_gen_id }}">
+        {{ block.settings.subtext }}
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Black Friday banner",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading",
+      "default": "BLACK FRIDAY SALE"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Up to 50% off sitewide | Limited time only"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "min": 600,
+      "max": 1900,
+      "step": 100,
+      "unit": "px",
+      "label": "Maximum width",
+      "default": 1200
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "spacing_between",
+      "min": 8,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "label": "Space between heading and subtext",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Desktop"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_desktop",
+      "min": 24,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "subtext_size_desktop",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Subtext size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_desktop",
+      "min": 20,
+      "max": 120,
+      "step": 10,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Mobile"
+    },
+    {
+      "type": "range",
+      "id": "heading_size_mobile",
+      "min": 20,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "subtext_size_mobile",
+      "min": 12,
+      "max": 28,
+      "step": 2,
+      "unit": "px",
+      "label": "Subtext size",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "padding_mobile",
+      "min": 20,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "subtext_color",
+      "label": "Subtext",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#e11d48"
+    },
+    {
+      "type": "header",
+      "content": "Background pattern"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_pattern",
+      "label": "Show decorative pattern",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "pattern_color",
+      "label": "Pattern color",
+      "default": "#e11d48"
+    },
+    {
+      "type": "range",
+      "id": "pattern_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Pattern opacity",
+      "default": 15
+    }
+  ],
+  "presets": [
+    {
+      "name": "Black Friday banner"
+    }
+  ]
+}
+{% endschema %}
