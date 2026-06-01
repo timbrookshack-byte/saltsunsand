@@ -56,7 +56,37 @@ Local preview against the store:
 shopify theme dev --store saltsunsand.myshopify.com
 ```
 
-## Git
+## Git & branch model
 
-- Active development branch: `claude/awesome-pascal-DmIPy`.
-- Do not push to other branches without explicit permission.
+- **Default branch:** `main` — the canonical state of the theme.
+- **Active development branch:** `claude/awesome-pascal-DmIPy` — do work here.
+- Do **not** push to branches other than the active dev branch without explicit
+  permission.
+- `main` and the dev branch started identical at the initial import.
+
+### Per-session workflow (do this every session)
+
+1. Make changes on the active dev branch (`claude/awesome-pascal-DmIPy`).
+2. Validate with `shopify theme check` before committing.
+3. Commit with a clear message and push the dev branch.
+4. Merge to `main` when the change is approved — via PR, or a direct push to
+   `main` **only when the user explicitly authorizes it that session**.
+
+## Deploying to the live storefront
+
+Theme code in this repo does **not** auto-deploy. Shipping to
+saltsunsand.com.au is done with the Shopify CLI, which must run on a machine
+authenticated to the store's Shopify account (i.e. the user's local machine —
+not this repo's CI/remote session):
+
+```bash
+# One-time install
+npm install -g @shopify/cli @shopify/theme
+
+shopify theme dev  --store saltsunsand.myshopify.com   # live-reload preview
+shopify theme push --store saltsunsand.myshopify.com   # deploy to a theme
+shopify theme pull --store saltsunsand.myshopify.com   # pull live theme back into repo
+```
+
+When the user asks to "deploy" or "go live" from a remote/web session, remind
+them this step runs locally with Shopify CLI auth.

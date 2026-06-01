@@ -37,3 +37,23 @@ shopify theme push
 # Pull the latest live theme down into this repo
 shopify theme pull
 ```
+
+> **Note:** `shopify theme push/pull` must run on a machine signed in to the
+> store's Shopify account. Code in this repo does **not** auto-deploy — pushing
+> to GitHub and deploying to the storefront are separate steps.
+
+## Branches & workflow
+
+- **`main`** — canonical state of the theme (default branch).
+- **`claude/awesome-pascal-DmIPy`** — active development branch; changes are made
+  here, then merged into `main` once approved.
+
+Typical loop:
+
+1. Edit on the dev branch.
+2. `shopify theme check` to lint Liquid.
+3. Commit and push.
+4. Merge into `main`.
+5. Deploy to the live store with `shopify theme push` (run locally).
+
+See `CLAUDE.md` for theme structure, conventions, and gotchas.
