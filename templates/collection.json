@@ -19,6 +19,12 @@
             "show_heading": true,
             "show_pills": true,
             "show_seo_line": true,
+            "enable_hero_image": true,
+            "hero_image": "shopify://shop_images/WhatsApp_Image_2026-05-26_at_9.08.30_AM.jpg",
+            "hero_height": 360,
+            "hero_overlay_color": "#000000",
+            "hero_overlay_opacity": 40,
+            "hero_image_brightness": 100,
             "section_padding_top": 40,
             "section_padding_bottom": 40,
             "breadcrumb_spacing": 15,
@@ -428,7 +434,7 @@
             "badge_star_height": 15,
             "badge_action": "featured_popup",
             "badge_featured_page_url": "",
-            "badge_main_color": "#E15C12",
+            "badge_main_color": "#e15c12",
             "badge_text_color": "#333333"
           }
         }
