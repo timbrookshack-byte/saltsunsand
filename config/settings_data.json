@@ -151,13 +151,13 @@
           "greeting_message": ""
         }
       },
-      "1990815452989453926": {
-        "type": "shopify://apps/ryviu-product-reviews/blocks/ryviu-js/807ad6ed-1a6a-4559-abea-ed062858d9da",
-        "disabled": false,
-        "settings": {}
-      },
       "15573056287721514228": {
         "type": "shopify://apps/json-ld-for-seo/blocks/app-embed/3fcb4f45-bdde-43fd-84ae-8006cdcd1028",
+        "disabled": true,
+        "settings": {}
+      },
+      "1990815452989453926": {
+        "type": "shopify://apps/ryviu-product-reviews/blocks/ryviu-js/807ad6ed-1a6a-4559-abea-ed062858d9da",
         "disabled": true,
         "settings": {}
       }
