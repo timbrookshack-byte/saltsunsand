@@ -114,6 +114,7 @@
         "image_height": "750px",
         "content_width": "small",
         "image_height_mobile": "500px",
+        "accessibility_info": "Slideshow about our brand",
         "color_text": "#ffffff",
         "color_background": "#ffffff",
         "gradient_background": "",
@@ -141,6 +142,9 @@
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
             "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -167,6 +171,7 @@
         "button_icon": true,
         "highlighted_text": "scribble",
         "highlighted_scribble": "basic-underline",
+        "highlighted_reveal": false,
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -189,8 +194,8 @@
           "type": "ai_gen_block_c854048",
           "name": "Black Friday banner",
           "settings": {
-            "heading": "SUMMER CLEARANCE SALE",
-            "subtext": "Up to 40% off sitewide | Final Days!",
+            "heading": "END OF FINANCIAL YEAR SALE!",
+            "subtext": "Up to 40% off sitewide - Free Shipping for orders over $100!",
             "max_width": 1200,
             "text_alignment": "center",
             "spacing_between": 16,
@@ -347,6 +352,7 @@
         "collection-3"
       ],
       "settings": {
+        "card_style": "card",
         "image_type": "collection",
         "image_ratio": "square",
         "show_products_count": true,
@@ -363,6 +369,7 @@
         "description": "",
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -486,6 +493,7 @@
         "description": "",
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -508,6 +516,7 @@
           "type": "text",
           "settings": {
             "icon": "none",
+            "iwidth": "custom",
             "icon_width": 20,
             "text": "{{ section.settings.product.vendor }}",
             "text_size": "text-base"
@@ -518,6 +527,7 @@
           "settings": {
             "title_size": "product-title-md",
             "title_size_mobile": "product-title-md",
+            "title_tag": "h2",
             "show_price": true,
             "show_rating": true
           }
@@ -542,6 +552,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
+            "enable_dynamic_variants": true,
             "show_variant_labels": true,
             "picker_type": "button",
             "enable_color_swatches": true,
@@ -580,7 +591,8 @@
             "share_label": "Share",
             "show_help_desk": true,
             "help_label": "Need help?",
-            "help_page": ""
+            "help_page": "",
+            "help_page_external": false
           }
         },
         "read_more": {
@@ -672,6 +684,7 @@
         "button_icon": true,
         "highlighted_text": "text",
         "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -731,6 +744,9 @@
             "text_font": "body",
             "text_size": "subtext-custom",
             "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
             "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -785,6 +801,8 @@
         "content_position_mobile": "items-center justify-center",
         "text_alignment_mobile": "center",
         "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
         "color_highlight": "#fcd34d",
         "gradient_highlight": "",
         "color_button_text": "#171717",
@@ -853,6 +871,7 @@
             "author_info": "",
             "author_url": "",
             "image_ratio": "rounded",
+            "image_height": 30,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -866,6 +885,7 @@
             "author_info": "",
             "author_url": "",
             "image_ratio": "rounded",
+            "image_height": 30,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -879,6 +899,7 @@
             "author_info": "",
             "author_url": "",
             "image_ratio": "rounded",
+            "image_height": 30,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -897,6 +918,8 @@
         "image_height_mobile": "500px",
         "content_position_mobile": "items-center justify-center",
         "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
         "color_overlay": "#171717",
@@ -904,6 +927,7 @@
         "padding_top": 0,
         "padding_bottom": 0,
         "divider": false,
+        "full_width": true,
         "rounded": true,
         "enable_parallax": true,
         "parallax_direction": "vertical"
@@ -929,6 +953,7 @@
         "description": "",
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -954,6 +979,9 @@
             "text_font": "body",
             "text_size": "subtext-md",
             "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
             "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
@@ -979,6 +1007,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -1064,6 +1093,7 @@
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
@@ -1131,6 +1161,11 @@
             "show_heading": true,
             "show_pills": true,
             "show_seo_line": true,
+            "enable_hero_image": false,
+            "hero_height": 360,
+            "hero_overlay_color": "#000000",
+            "hero_overlay_opacity": 40,
+            "hero_image_brightness": 100,
             "section_padding_top": 0,
             "section_padding_bottom": 40,
             "breadcrumb_spacing": 15,
