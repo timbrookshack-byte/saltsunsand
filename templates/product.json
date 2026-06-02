@@ -12,6 +12,14 @@
     "main-product": {
       "type": "main-product",
       "blocks": {
+        "ryviu_product_reviews_ryviu_total_QzhXjE": {
+          "type": "shopify://apps/ryviu-product-reviews/blocks/ryviu-total/807ad6ed-1a6a-4559-abea-ed062858d9da",
+          "settings": {
+            "layout_style": "product",
+            "show_when_no_reviews": true,
+            "show_average_rating": true
+          }
+        },
         "vendor": {
           "type": "text",
           "disabled": true,
@@ -31,14 +39,6 @@
             "title_tag": "h1",
             "show_price": true,
             "show_rating": true
-          }
-        },
-        "ryviu_product_reviews_ryviu_total_V4icFQ": {
-          "type": "shopify://apps/ryviu-product-reviews/blocks/ryviu-total/807ad6ed-1a6a-4559-abea-ed062858d9da",
-          "settings": {
-            "layout_style": "product",
-            "show_when_no_reviews": true,
-            "show_average_rating": false
           }
         },
         "description": {
@@ -145,9 +145,9 @@
         }
       },
       "block_order": [
+        "ryviu_product_reviews_ryviu_total_QzhXjE",
         "vendor",
         "title",
-        "ryviu_product_reviews_ryviu_total_V4icFQ",
         "description",
         "countdown",
         "variant_picker",
