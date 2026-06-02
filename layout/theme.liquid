@@ -35,7 +35,8 @@
 
     {%- liquid
       render 'social-meta-tags'
-      
+      render 'structured-data-global'
+
       render 'css-variables'
       echo 'theme.css' | asset_url | stylesheet_tag: preload: true
 

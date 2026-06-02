@@ -1,0 +1,74 @@
+{%- doc -%}
+  Emits sitewide Organization and WebSite JSON-LD structured data.
+
+  - Organization: name, url, logo and `sameAs` social profiles (built from the
+    populated `settings.social_*_link` theme settings).
+  - WebSite: includes a SearchAction so Google can offer a sitelinks search box.
+
+  Rendered once from layout/theme.liquid <head>.
+
+  @example
+  {% render 'structured-data-global' %}
+{%- enddoc -%}
+
+{%- liquid
+  assign social_links = '' | split: ','
+  if settings.social_facebook_link != blank
+    assign one = settings.social_facebook_link | split: '###'
+    assign social_links = social_links | concat: one
+  endif
+  if settings.social_instagram_link != blank
+    assign one = settings.social_instagram_link | split: '###'
+    assign social_links = social_links | concat: one
+  endif
+  if settings.social_twitter_link != blank
+    assign one = settings.social_twitter_link | split: '###'
+    assign social_links = social_links | concat: one
+  endif
+  if settings.social_youtube_link != blank
+    assign one = settings.social_youtube_link | split: '###'
+    assign social_links = social_links | concat: one
+  endif
+  if settings.social_tiktok_link != blank
+    assign one = settings.social_tiktok_link | split: '###'
+    assign social_links = social_links | concat: one
+  endif
+  if settings.social_pinterest_link != blank
+    assign one = settings.social_pinterest_link | split: '###'
+    assign social_links = social_links | concat: one
+  endif
+  if settings.social_linkedin_link != blank
+    assign one = settings.social_linkedin_link | split: '###'
+    assign social_links = social_links | concat: one
+  endif
+-%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": {{ shop.name | json }},
+  "url": {{ shop.url | append: '/' | json }}
+  {%- if settings.logo != blank -%}
+  ,"logo": {{ settings.logo | image_url: width: 500 | prepend: "https:" | json }}
+  {%- endif -%}
+  {%- if social_links.size > 0 -%}
+  ,"sameAs": [{% for s in social_links %}{{ s | json }}{% unless forloop.last %},{% endunless %}{% endfor %}]
+  {%- endif -%}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ shop.name | json }},
+  "url": {{ shop.url | append: '/' | json }},
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "{{ shop.url }}{{ routes.search_url }}?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
