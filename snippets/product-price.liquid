@@ -89,6 +89,22 @@
     </span>
   {%- endif -%}
 
+  {%- if on_sale -%}
+    {%- liquid
+      assign saved_value = compare_at_price | minus: price
+      if settings.currency_code_enabled
+        assign saved_money = saved_value | money_with_currency
+      else
+        assign saved_money = saved_value | money
+      endif
+      assign saved_pct = saved_value | times: 100.0 | divided_by: compare_at_price | round
+    -%}
+    <span class="price__save" aria-hidden="true">
+      {{- 'products.general.save_html' | t: saved_amount: saved_money -}}
+      {%- if saved_pct >= 5 %} ({{ saved_pct }}%){% endif -%}
+    </span>
+  {%- endif -%}
+
   {%- unless hide_unit_price -%}
     {%- if target.unit_price_measurement -%}
       {%- liquid

@@ -45,6 +45,12 @@
       endif
     -%}
 
+    {%- comment -%} CRO: emphasise the sale (now) price and savings, de-emphasise the was price {%- endcomment -%}
+    <style>
+      .price--on-sale .price__regular{font-weight:var(--font-bold)}
+      .price__save{display:inline-flex;align-items:center;gap:.25rem;font-weight:var(--font-bold);font-size:var(--text-xs);line-height:1;color:rgb(var(--color-sale-price));background:rgb(var(--color-sale-price)/.12);padding:.2em .55em;border-radius:9999px;white-space:nowrap}
+    </style>
+
     <link rel="stylesheet" href="{{ 'apps.css' | asset_url }}" media="print" fetchpriority="low" onload="this.media='all'">
 
     {{ content_for_header }}
