@@ -17,6 +17,34 @@
   assign collection_alt = desktop_image.alt | default: collection.title
 -%}
 
+{%- comment -%} Preload the LCP banner image on collection pages to speed up Largest Contentful Paint {%- endcomment -%}
+{%- if section.index == 1 and desktop_image != blank -%}
+  {%- capture banner_lcp_sizes -%}{% if section.settings.full_width %}100vw{% else %}min({{ settings.page_width }}px, 100vw){% endif %}{%- endcapture -%}
+  {%- if mobile_image != blank and mobile_image != desktop_image -%}
+    {%- comment %}theme-check-disable AssetPreload{% endcomment %}
+    <link rel="preload" as="image"
+      imagesrcset="{{ mobile_image | image_url: width: 400 }} 400w, {{ mobile_image | image_url: width: 600 }} 600w, {{ mobile_image | image_url: width: 800 }} 800w, {{ mobile_image | image_url: width: 1000 }} 1000w"
+      imagesizes="100vw"
+      media="(max-width: 767px)"
+      fetchpriority="high">
+    <link rel="preload" as="image"
+      href="{{ desktop_image | image_url: width: desktop_image.width }}"
+      imagesrcset="{{ desktop_image | image_url: width: 600 }} 600w, {{ desktop_image | image_url: width: 900 }} 900w, {{ desktop_image | image_url: width: 1200 }} 1200w, {{ desktop_image | image_url: width: 1600 }} 1600w, {{ desktop_image | image_url: width: 2000 }} 2000w"
+      imagesizes="{{ banner_lcp_sizes }}"
+      media="(min-width: 768px)"
+      fetchpriority="high">
+    {%- comment %}theme-check-enable AssetPreload{% endcomment %}
+  {%- else -%}
+    {%- comment %}theme-check-disable AssetPreload{% endcomment %}
+    <link rel="preload" as="image"
+      href="{{ desktop_image | image_url: width: desktop_image.width }}"
+      imagesrcset="{{ desktop_image | image_url: width: 600 }} 600w, {{ desktop_image | image_url: width: 900 }} 900w, {{ desktop_image | image_url: width: 1200 }} 1200w, {{ desktop_image | image_url: width: 1600 }} 1600w, {{ desktop_image | image_url: width: 2000 }} 2000w"
+      imagesizes="{{ banner_lcp_sizes }}"
+      fetchpriority="high">
+    {%- comment %}theme-check-enable AssetPreload{% endcomment %}
+  {%- endif -%}
+{%- endif -%}
+
 <style>
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;

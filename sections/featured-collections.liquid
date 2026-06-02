@@ -93,12 +93,18 @@
                 <motion-list class="product-grid card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid">
                   {%- capture card_sizes -%}(max-width: 639px) calc(100vw / {{ section.settings.columns_mobile }}), calc(min({{ settings.page_width }}px, 100vw) / {{ section.settings.columns }}){%- endcapture -%}
                   {%- for product in products limit: section.settings.product_limit -%}
+                    {%- liquid
+                      assign lazy_load = true
+                      if forloop.index <= section.settings.columns
+                        assign lazy_load = false
+                      endif
+                    -%}
                     {%- render 'product-card',
                       product: product,
                       product_id: product.id,
                       section_id: section.id,
                       block_id: block.id,
-                      lazy_load: false,
+                      lazy_load: lazy_load,
                       sizes: card_sizes,
                       image_ratio: settings.product_image_ratio,
                       image_fill: settings.product_image_fill,

@@ -25,6 +25,18 @@
   }
 </style>
 
+{%- comment -%} Preload the first product image (LCP) to speed up Largest Contentful Paint on product pages {%- endcomment -%}
+{%- if section.index == 1 and first_media != blank and first_media.media_type == 'image' -%}
+  {%- assign lcp_image = first_media.preview_image | default: first_media -%}
+  {%- comment %}theme-check-disable AssetPreload{% endcomment %}
+  <link rel="preload" as="image"
+    href="{{ lcp_image | image_url: width: 1500 }}"
+    imagesrcset="{{ lcp_image | image_url: width: 400 }} 400w, {{ lcp_image | image_url: width: 600 }} 600w, {{ lcp_image | image_url: width: 800 }} 800w, {{ lcp_image | image_url: width: 1100 }} 1100w, {{ lcp_image | image_url: width: 1500 }} 1500w, {{ lcp_image | image_url: width: 1900 }} 1900w"
+    imagesizes="(max-width: 767px) calc(100vw - 40px), (max-width: 1023px) calc(100vw - 64px), 75vw"
+    fetchpriority="high">
+  {%- comment %}theme-check-enable AssetPreload{% endcomment %}
+{%- endif -%}
+
 {%- liquid
   assign product_form_id = 'ProductForm-' | append: section.id | append: '-' | append: product.id
   assign media_count = product.media.size
