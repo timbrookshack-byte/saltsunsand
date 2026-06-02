@@ -19,7 +19,7 @@
             "show_heading": true,
             "show_pills": true,
             "show_seo_line": true,
-            "enable_hero_image": true,
+            "enable_hero_image": false,
             "hero_collection": "{{ closest.collection }}",
             "hero_height": 360,
             "hero_overlay_color": "#000000",
@@ -45,7 +45,7 @@
             "pill_icon_size": 6,
             "pill_icon_color": "#0097b2",
             "seo_font_size": 16,
-            "seo_text_color": "#ffffff",
+            "seo_text_color": "#171717",
             "seo_max_width": 800
           },
           "blocks": {}
