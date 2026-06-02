@@ -144,7 +144,7 @@
 
 <collection-hero-{{ ai_gen_id }} class="ai-collection-hero-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
   <div class="ai-collection-hero__container-{{ ai_gen_id }}">
-    {% if block.settings.show_breadcrumb %}
+    {% if block.settings.show_breadcrumb and collection != blank %}
       <div class="ai-collection-hero__breadcrumb-{{ ai_gen_id }}">
         <nav class="ai-collection-hero__breadcrumb-nav-{{ ai_gen_id }}" aria-label="Breadcrumb">
           <a href="/" class="ai-collection-hero__breadcrumb-link-{{ ai_gen_id }}">Home</a>
@@ -154,7 +154,7 @@
       </div>
     {% endif %}
 
-    {% if block.settings.show_heading %}
+    {% if block.settings.show_heading and collection != blank %}
       <h1 class="ai-collection-hero__heading-{{ ai_gen_id }}">
         {{ collection.title }}
       </h1>
