@@ -20,6 +20,14 @@
 {% enddoc %}
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
+{% liquid
+  assign hero_image = block.settings.hero_image | default: collection.image
+  assign has_hero = false
+  if block.settings.enable_hero_image and hero_image != blank and collection != blank
+    assign has_hero = true
+  endif
+%}
+
 {% style %}
   .ai-collection-hero-{{ ai_gen_id }} {
     display: block;
@@ -32,6 +40,47 @@
     margin: 0 auto;
     padding: 0 20px;
   }
+
+  {% if has_hero %}
+  .ai-collection-hero-{{ ai_gen_id }}.ai-collection-hero--has-media-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    min-height: {{ block.settings.hero_height }}px;
+  }
+
+  .ai-collection-hero__media-{{ ai_gen_id }},
+  .ai-collection-hero__overlay-{{ ai_gen_id }} {
+    position: absolute;
+    inset: 0;
+  }
+
+  .ai-collection-hero__media-{{ ai_gen_id }} {
+    z-index: 0;
+    overflow: hidden;
+  }
+
+  .ai-collection-hero__media-{{ ai_gen_id }} img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: brightness({{ block.settings.hero_image_brightness }}%);
+  }
+
+  .ai-collection-hero__overlay-{{ ai_gen_id }} {
+    z-index: 1;
+    background-color: {{ block.settings.hero_overlay_color }};
+    opacity: {{ block.settings.hero_overlay_opacity | divided_by: 100.0 }};
+  }
+
+  .ai-collection-hero--has-media-{{ ai_gen_id }} .ai-collection-hero__container-{{ ai_gen_id }} {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+  }
+  {% endif %}
 
   .ai-collection-hero__breadcrumb-{{ ai_gen_id }} {
     margin-bottom: {{ block.settings.breadcrumb_spacing }}px;
@@ -142,7 +191,13 @@
   }
 {% endstyle %}
 
-<collection-hero-{{ ai_gen_id }} class="ai-collection-hero-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+<collection-hero-{{ ai_gen_id }} class="ai-collection-hero-{{ ai_gen_id }}{% if has_hero %} ai-collection-hero--has-media-{{ ai_gen_id }}{% endif %}" {{ block.shopify_attributes }}>
+  {% if has_hero %}
+    <div class="ai-collection-hero__media-{{ ai_gen_id }}">
+      {{ hero_image | image_url: width: 2000 | image_tag: loading: 'eager', fetchpriority: 'high', sizes: '100vw', widths: '600, 900, 1200, 1600, 2000', alt: '' }}
+    </div>
+    <div class="ai-collection-hero__overlay-{{ ai_gen_id }}" aria-hidden="true"></div>
+  {% endif %}
   <div class="ai-collection-hero__container-{{ ai_gen_id }}">
     {% if block.settings.show_breadcrumb and collection != blank %}
       <div class="ai-collection-hero__breadcrumb-{{ ai_gen_id }}">
@@ -222,6 +277,59 @@
       "label": "Show SEO description",
       "default": true,
       "info": "Pulls from collection.metafields.custom.seo_grab_line"
+    },
+    {
+      "type": "header",
+      "content": "Hero image"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_hero_image",
+      "label": "Use a background hero image",
+      "default": false,
+      "info": "Uses the collection's featured image by default. Set light text colours below so the heading, breadcrumb and SEO text stay readable."
+    },
+    {
+      "type": "image_picker",
+      "id": "hero_image",
+      "label": "Image override",
+      "info": "Optional. Falls back to the collection's featured image."
+    },
+    {
+      "type": "range",
+      "id": "hero_height",
+      "label": "Minimum height",
+      "min": 160,
+      "max": 700,
+      "step": 10,
+      "unit": "px",
+      "default": 360
+    },
+    {
+      "type": "color",
+      "id": "hero_overlay_color",
+      "label": "Overlay colour",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "hero_overlay_opacity",
+      "label": "Overlay opacity",
+      "min": 0,
+      "max": 90,
+      "step": 5,
+      "unit": "%",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "hero_image_brightness",
+      "label": "Image brightness",
+      "min": 20,
+      "max": 130,
+      "step": 5,
+      "unit": "%",
+      "default": 100
     },
     {
       "type": "header",
