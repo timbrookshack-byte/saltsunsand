@@ -57,3 +57,4 @@ Typical loop:
 5. Deploy to the live store with `shopify theme push` (run locally).
 
 See `CLAUDE.md` for theme structure, conventions, and gotchas.
+See `VERIFYING.md` for how to push to a staging theme and verify changes.
