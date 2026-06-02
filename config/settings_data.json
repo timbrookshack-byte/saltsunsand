@@ -137,11 +137,6 @@
     },
     "content_for_index": [],
     "blocks": {
-      "15573056287721514228": {
-        "type": "shopify://apps/json-ld-for-seo/blocks/app-embed/3fcb4f45-bdde-43fd-84ae-8006cdcd1028",
-        "disabled": false,
-        "settings": {}
-      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
@@ -159,6 +154,11 @@
       "1990815452989453926": {
         "type": "shopify://apps/ryviu-product-reviews/blocks/ryviu-js/807ad6ed-1a6a-4559-abea-ed062858d9da",
         "disabled": false,
+        "settings": {}
+      },
+      "15573056287721514228": {
+        "type": "shopify://apps/json-ld-for-seo/blocks/app-embed/3fcb4f45-bdde-43fd-84ae-8006cdcd1028",
+        "disabled": true,
         "settings": {}
       }
     }
