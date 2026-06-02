@@ -1,1 +1,727 @@
-{"sections":{"collection_list_8X7pgG":{"type":"collection-list","blocks":{"collection_XF9YbU":{"type":"collection","settings":{"collection":"outdoor-cushions-bondi","image":"shopify:\/\/shop_images\/b10ace2e-e138-4dc3-9804-1522fc16fb92.jpg","title":"Bondi Outdoor Cushion Collection","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_gRdtQE":{"type":"collection","settings":{"collection":"sss-tahiti-cushions","image":"shopify:\/\/shop_images\/73a0d7b7-2a13-4ec2-bf2a-d46ce0d5d258.jpg","title":"Tahiti Outdoor Cushion Collection","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_eHkFkc":{"type":"collection","settings":{"collection":"bondi-stylist-selection","image":"shopify:\/\/shop_images\/BondiStylistSelection-SoarAbove5pc.png","title":"saltsunsand Outdoor Stylist Selections","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_NP8b7P":{"type":"collection","settings":{"collection":"outdoor-chair-cushions","image":"shopify:\/\/shop_images\/Naturalstripehb2.png","title":"Outdoor Chair Cushion Collection","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_UpYErx":{"type":"collection","settings":{"collection":"portsea-outdoor-cushions-from-recycled-bottles","image":"shopify:\/\/shop_images\/IMG_5574.jpg","title":"Portsea Outdoor Cushion Collection","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}}},"block_order":["collection_XF9YbU","collection_gRdtQE","collection_eHkFkc","collection_NP8b7P","collection_UpYErx"],"name":"Collection list","settings":{"image_type":"collection","image_ratio":"landscape","show_products_count":false,"show_view_all":false,"columns":5,"carousel_on_desktop":true,"columns_mobile":"2","swipe_on_mobile":true,"heading":"","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_tag":"h2","subheading":"","description":"","highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":12,"padding_bottom":16,"divider":false,"full_width":false,"rounded":false}},"collage_cbDJpB":{"type":"collage","blocks":{"image_GezNEX":{"type":"image","settings":{"subheading":"","heading":"<em>Bondi<\/em> Outdoor Cushion Collection","link":"https:\/\/saltsunsand.com.au\/collections\/outdoor-cushions-bondi","invert_subheading_heading":false,"image":"shopify:\/\/shop_images\/SeascapeTeal-Tidewater_1.jpg","image_ratio":"portrait","content_position":"md:items-end md:justify-start","text_alignment":"left","image_ratio_mobile":"portrait","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","highlighted_text":"scribble","highlighted_scribble":"squiggle-underline","color_text":"#ffffff","color_highlight":"","gradient_highlight":"","color_overlay":"#171717","overlay_opacity":10}},"image_9U3BTj":{"type":"image","settings":{"subheading":"","heading":"Outdoor <em>Chair<\/em> Cushions","link":"https:\/\/saltsunsand.com.au\/collections\/outdoor-chair-cushions","invert_subheading_heading":false,"image":"shopify:\/\/shop_images\/Naturalstripehb2.png","image_ratio":"portrait","content_position":"md:items-end md:justify-start","text_alignment":"left","image_ratio_mobile":"portrait","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","highlighted_text":"scribble","highlighted_scribble":"squiggle-underline","color_text":"#ffffff","color_highlight":"","gradient_highlight":"","color_overlay":"#171717","overlay_opacity":10}},"image_BpDWTP":{"type":"image","settings":{"subheading":"","heading":"<em>Tahiti<\/em> Outdoor Cushion Collection","link":"https:\/\/saltsunsand.com.au\/collections\/sss-tahiti-cushions","invert_subheading_heading":false,"image":"shopify:\/\/shop_images\/5pcnavy_resort.png","image_ratio":"portrait","content_position":"md:items-end md:justify-start","text_alignment":"left","image_ratio_mobile":"portrait","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","highlighted_text":"scribble","highlighted_scribble":"squiggle-underline","color_text":"#ffffff","color_highlight":"","gradient_highlight":"","color_overlay":"#171717","overlay_opacity":10}},"image_7UQ78C":{"type":"image","settings":{"subheading":"","heading":"Outdoor Cushions <em>Stylist Selections<\/em>","link":"shopify:\/\/collections\/bondi-stylist-selection","invert_subheading_heading":false,"image":"shopify:\/\/shop_images\/Palette-Navy.jpg","image_ratio":"portrait","content_position":"md:items-end md:justify-start","text_alignment":"left","image_ratio_mobile":"portrait","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","highlighted_text":"scribble","highlighted_scribble":"squiggle-underline","color_text":"#ffffff","color_highlight":"","gradient_highlight":"","color_overlay":"#171717","overlay_opacity":10}},"image_8h6ae9":{"type":"image","settings":{"subheading":"Made from up to 800 recycled bottles","heading":"Portsea Outdoor Cushions","link":"shopify:\/\/collections\/portsea-outdoor-cushions-from-recycled-bottles","invert_subheading_heading":false,"image":"shopify:\/\/shop_images\/Avalon2.png","image_ratio":"portrait","content_position":"md:items-end md:justify-start","text_alignment":"left","image_ratio_mobile":"portrait","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","highlighted_text":"none","highlighted_scribble":"circle","color_text":"#ffffff","color_highlight":"#fafafa","gradient_highlight":"","color_overlay":"#171717","overlay_opacity":61}}},"block_order":["image_GezNEX","image_9U3BTj","image_BpDWTP","image_7UQ78C","image_8h6ae9"],"disabled":true,"settings":{"heading":"<em>Outdoor Cushions<\/em>","heading_size":"title-md","heading_alignment":"text-center md:items-center","heading_tag":"h1","subheading":"","description":"<p>For 23 years we have developed our range of outdoor cushions <strong>Built to survive the elements<\/strong>, to provide added <strong>comfort<\/strong> to an outdoor seat or chair and add a bit of <strong>wow factor<\/strong> to your outdoor space!<\/p>","button_label":"","button_link":"","button_external":false,"button_icon":true,"highlighted_text":"scribble","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":28,"padding_bottom":72,"divider":false,"full_width":false,"rounded":true,"enable_parallax":true}},"main-collection":{"type":"main-collection","blocks":{"subcollections":{"type":"subcollections","settings":{"menu":"outdoor-cushion-by-style","show_count":true}},"promotion":{"type":"promotion","disabled":true,"settings":{"position":8,"column_size":"1","content_position":"md:items-center","text_alignment":"center","heading":"Example heading","content":"<p>Share information about your brand with your customers.<\/p>","button_label":"Shop now","button_link":"","button_style":"secondary","button_external":false,"button_icon":true,"content_position_mobile":"items-center","text_alignment_mobile":"center","color_text":"#ffffff","color_button_text":"#4d5940","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#000000","overlay_opacity":30}}},"block_order":["subcollections","promotion"],"settings":{"products_per_page":12,"columns":4,"columns_mobile":"2","pagination":"infinite","enable_filtering":false,"filter_type":"sidebar","filter_collapsed":false,"filter_color_swatches":true,"enable_sorting":false,"padding_top":24,"padding_bottom":28,"divider":false,"full_width":false,"rounded":true}},"collection_list_JJNiU7":{"type":"collection-list","blocks":{"collection_Aepw4y":{"type":"collection","settings":{"collection":"portsea-outdoor-cushions-from-recycled-bottles","image":"shopify:\/\/shop_images\/IMG_5574.jpg","title":"Portsea Cushion Collection","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_j4ytyK":{"type":"collection","settings":{"collection":"bondi-stylist-selection","image":"shopify:\/\/shop_images\/BondiStylistSelection-SoarAbove5pc.png","title":"Outdoor Stylist Selections","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_Haj8kA":{"type":"collection","settings":{"collection":"outdoor-cushions-bondi","image":"shopify:\/\/shop_images\/b10ace2e-e138-4dc3-9804-1522fc16fb92.jpg","title":"Bondi Outdoor Cushions","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_gCVGn4":{"type":"collection","settings":{"collection":"sss-tahiti-cushions","image":"shopify:\/\/shop_images\/Naturalescapefringe.png","title":"Tahiti Outdoor Cushion Collection","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}},"collection_DwHreE":{"type":"collection","settings":{"collection":"outdoor-chair-cushions","image":"shopify:\/\/shop_images\/Naturalstripehb2.png","title":"Outdoor Chair Cushions","description":"","overlay_content":false,"color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":30}}},"block_order":["collection_Aepw4y","collection_j4ytyK","collection_Haj8kA","collection_gCVGn4","collection_DwHreE"],"name":"Collection list","settings":{"image_type":"collection","image_ratio":"square","show_products_count":false,"show_view_all":false,"columns":5,"carousel_on_desktop":true,"columns_mobile":"1","swipe_on_mobile":false,"heading":"","heading_size":"title-sm","heading_alignment":"text-left md:items-end md:flex-row","heading_tag":"h2","subheading":"","description":"","highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":72,"divider":false,"full_width":false,"rounded":false}},"images-with-text-overlay":{"type":"images-with-text-overlay","blocks":{"image":{"type":"image","settings":{"image_width":"custom","image_max_width":50,"image_max_width_mobile":50}},"spacing":{"type":"spacing","settings":{"height":80,"height_mobile":20}},"subheading":{"type":"subheading","settings":{"subheading":"Tagline","subheading_size":"subtitle-md","secondary_color":true}},"heading":{"type":"heading","settings":{"heading":"Example heading","heading_size":"title-md","heading_tag":"h2","highlighted_text":"none","highlighted_scribble":"circle"}},"text":{"type":"text","settings":{"text":"<p>Give customers details about the banner image(s) or content on the template.<\/p>","text_font":"body","text_size":"subtext-md","text_max_size":32,"secondary_color":false,"highlighted_text":"none","highlighted_scribble":"circle"}}},"block_order":["image","spacing","subheading","heading","text"],"disabled":true,"settings":{"transparent_header":false,"image_height":"650px","content_width":"small","content_position":"md:items-center md:justify-start","text_alignment":"left","image_height_mobile":"500px","content_position_mobile":"items-center justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_highlight":"#e0a580","gradient_highlight":"","color_button_text":"#171717","color_button_background":"#ffffff","color_button_gradient":"","color_overlay":"#171717","overlay_opacity":100,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":true,"enable_parallax":true}},"blocks_BTbA7k":{"type":"_blocks","blocks":{"ai_gen_block_8f066c8_rX8AAK":{"type":"ai_gen_block_8f066c8","settings":{"show_breadcrumb":true,"show_heading":true,"show_pills":true,"show_seo_line":true,"section_padding_top":40,"section_padding_bottom":40,"breadcrumb_spacing":15,"heading_spacing":20,"pills_spacing":20,"breadcrumb_font_size":13,"breadcrumb_color":"#737373","heading_font_size":48,"heading_letter_spacing":0,"heading_color":"#171717","pill_font_size":13,"pill_padding_vertical":8,"pill_padding_horizontal":14,"pill_border_radius":20,"pill_gap":8,"pill_background":"#f5f5f5","pill_text_color":"#171717","pill_icon_size":6,"pill_icon_color":"#0097b2","seo_font_size":16,"seo_text_color":"#525252","seo_max_width":800},"blocks":{}}},"block_order":["ai_gen_block_8f066c8_rX8AAK"],"name":"Collection hero header","settings":{}},"main-collection-banner":{"type":"main-collection-banner","blocks":{"breadcrumb":{"type":"breadcrumb","disabled":true,"settings":{"show_collections_link":true}},"title":{"type":"title","disabled":true,"settings":{"title_size":"title-md"}},"description_mER6KD":{"type":"description","settings":{"text_font":"body","text_size":"subtext-md","text_max_size":20,"secondary_color":false}}},"block_order":["breadcrumb","title","description_mER6KD"],"settings":{"transparent_header":true,"show_image":false,"image_height":"750px","content_position":"md:items-end md:justify-start","text_alignment":"left","image_height_mobile":"auto","content_position_mobile":"items-end justify-start","text_alignment_mobile":"left","color_text":"#ffffff","color_overlay":"#000000","overlay_opacity":40,"padding_top":0,"padding_bottom":0,"divider":false,"full_width":true,"rounded":true,"enable_parallax":true,"parallax_direction":"vertical"}},"recently-viewed":{"type":"recently-viewed","settings":{"product_limit":6,"columns":4,"carousel_on_desktop":true,"columns_mobile":"1","swipe_on_mobile":true,"heading":"Recently Viewed","heading_size":"title-md","heading_alignment":"text-left md:items-end md:flex-row","heading_tag":"h2","subheading":"","description":"","highlighted_text":"none","highlighted_scribble":"circle","color_text":"","color_background":"","gradient_background":"","color_highlight":"","gradient_highlight":"","color_button_text":"","color_button_background":"","color_button_gradient":"","padding_top":72,"padding_bottom":80,"divider":false,"full_width":false,"rounded":true}}},"order":["blocks_BTbA7k","collection_list_8X7pgG","collage_cbDJpB","main-collection","collection_list_JJNiU7","images-with-text-overlay","main-collection-banner","recently-viewed"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "blocks_BTbA7k": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_8f066c8_rX8AAK": {
+          "type": "ai_gen_block_8f066c8",
+          "settings": {
+            "show_breadcrumb": true,
+            "show_heading": true,
+            "show_pills": true,
+            "show_seo_line": true,
+            "section_padding_top": 40,
+            "section_padding_bottom": 40,
+            "breadcrumb_spacing": 15,
+            "heading_spacing": 20,
+            "pills_spacing": 20,
+            "breadcrumb_font_size": 13,
+            "breadcrumb_color": "#737373",
+            "heading_font_size": 48,
+            "heading_letter_spacing": 0,
+            "heading_color": "#171717",
+            "pill_font_size": 13,
+            "pill_padding_vertical": 8,
+            "pill_padding_horizontal": 14,
+            "pill_border_radius": 20,
+            "pill_gap": 8,
+            "pill_background": "#f5f5f5",
+            "pill_text_color": "#171717",
+            "pill_icon_size": 6,
+            "pill_icon_color": "#0097b2",
+            "seo_font_size": 16,
+            "seo_text_color": "#525252",
+            "seo_max_width": 800
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_8f066c8_rX8AAK"
+      ],
+      "name": "Collection hero header",
+      "settings": {}
+    },
+    "collection_list_8X7pgG": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_XF9YbU": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor-cushions-bondi",
+            "image": "shopify://shop_images/b10ace2e-e138-4dc3-9804-1522fc16fb92.jpg",
+            "title": "Bondi Outdoor Cushion Collection",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_gRdtQE": {
+          "type": "collection",
+          "settings": {
+            "collection": "sss-tahiti-cushions",
+            "image": "shopify://shop_images/73a0d7b7-2a13-4ec2-bf2a-d46ce0d5d258.jpg",
+            "title": "Tahiti Outdoor Cushion Collection",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_eHkFkc": {
+          "type": "collection",
+          "settings": {
+            "collection": "bondi-stylist-selection",
+            "image": "shopify://shop_images/BondiStylistSelection-SoarAbove5pc.png",
+            "title": "saltsunsand Outdoor Stylist Selections",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_NP8b7P": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor-chair-cushions",
+            "image": "shopify://shop_images/Naturalstripehb2.png",
+            "title": "Outdoor Chair Cushion Collection",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_UpYErx": {
+          "type": "collection",
+          "settings": {
+            "collection": "portsea-outdoor-cushions-from-recycled-bottles",
+            "image": "shopify://shop_images/IMG_5574.jpg",
+            "title": "Portsea Outdoor Cushion Collection",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_XF9YbU",
+        "collection_gRdtQE",
+        "collection_eHkFkc",
+        "collection_NP8b7P",
+        "collection_UpYErx"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "card_style": "card",
+        "image_type": "collection",
+        "image_ratio": "landscape",
+        "show_products_count": false,
+        "show_view_all": false,
+        "columns": 5,
+        "carousel_on_desktop": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 12,
+        "padding_bottom": 16,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "collage_cbDJpB": {
+      "type": "collage",
+      "blocks": {
+        "image_GezNEX": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "<em>Bondi</em> Outdoor Cushion Collection",
+            "link": "https://saltsunsand.com.au/collections/outdoor-cushions-bondi",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/SeascapeTeal-Tidewater_1.jpg",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_9U3BTj": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "Outdoor <em>Chair</em> Cushions",
+            "link": "https://saltsunsand.com.au/collections/outdoor-chair-cushions",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/Naturalstripehb2.png",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_BpDWTP": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "<em>Tahiti</em> Outdoor Cushion Collection",
+            "link": "https://saltsunsand.com.au/collections/sss-tahiti-cushions",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/5pcnavy_resort.png",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_7UQ78C": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "Outdoor Cushions <em>Stylist Selections</em>",
+            "link": "shopify://collections/bondi-stylist-selection",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/Palette-Navy.jpg",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "squiggle-underline",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_8h6ae9": {
+          "type": "image",
+          "settings": {
+            "subheading": "Made from up to 800 recycled bottles",
+            "heading": "Portsea Outdoor Cushions",
+            "link": "shopify://collections/portsea-outdoor-cushions-from-recycled-bottles",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/Avalon2.png",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "#fafafa",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 61
+          }
+        }
+      },
+      "block_order": [
+        "image_GezNEX",
+        "image_9U3BTj",
+        "image_BpDWTP",
+        "image_7UQ78C",
+        "image_8h6ae9"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "<em>Outdoor Cushions</em>",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h1",
+        "subheading": "",
+        "description": "<p>For 23 years we have developed our range of outdoor cushions <strong>Built to survive the elements</strong>, to provide added <strong>comfort</strong> to an outdoor seat or chair and add a bit of <strong>wow factor</strong> to your outdoor space!</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "scribble",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 28,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": true,
+        "enable_parallax": true
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "subcollections": {
+          "type": "subcollections",
+          "settings": {
+            "menu": "outdoor-cushion-by-style",
+            "show_count": true
+          }
+        },
+        "promotion": {
+          "type": "promotion",
+          "disabled": true,
+          "settings": {
+            "position": 8,
+            "column_size": "1",
+            "row_size": "1",
+            "content_position": "md:items-center",
+            "text_alignment": "center",
+            "content_layout": "default",
+            "subheading": "",
+            "heading": "Example heading",
+            "heading_size": "title-xl tracking-heading",
+            "content": "<p>Share information about your brand with your customers.</p>",
+            "button_label": "Shop now",
+            "button_link": "",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true,
+            "content_position_mobile": "items-center",
+            "text_alignment_mobile": "center",
+            "direction": "left",
+            "speed": 20,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_background": "#171717",
+            "gradient_background": "",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_button_text": "#4d5940",
+            "color_button_background": "#ffffff",
+            "color_button_gradient": "",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "subcollections",
+        "promotion"
+      ],
+      "settings": {
+        "products_per_page": 12,
+        "columns": 4,
+        "columns_mobile": "2",
+        "pagination": "infinite",
+        "enable_filtering": false,
+        "filter_type": "sidebar",
+        "filter_collapsed": false,
+        "filter_color_swatches": true,
+        "enable_sorting": false,
+        "show_on_model": false,
+        "buttons_style": "secondary",
+        "padding_top": 24,
+        "padding_bottom": 28,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "collection_list_JJNiU7": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_Aepw4y": {
+          "type": "collection",
+          "settings": {
+            "collection": "portsea-outdoor-cushions-from-recycled-bottles",
+            "image": "shopify://shop_images/IMG_5574.jpg",
+            "title": "Portsea Cushion Collection",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_j4ytyK": {
+          "type": "collection",
+          "settings": {
+            "collection": "bondi-stylist-selection",
+            "image": "shopify://shop_images/BondiStylistSelection-SoarAbove5pc.png",
+            "title": "Outdoor Stylist Selections",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_Haj8kA": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor-cushions-bondi",
+            "image": "shopify://shop_images/b10ace2e-e138-4dc3-9804-1522fc16fb92.jpg",
+            "title": "Bondi Outdoor Cushions",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_gCVGn4": {
+          "type": "collection",
+          "settings": {
+            "collection": "sss-tahiti-cushions",
+            "image": "shopify://shop_images/Naturalescapefringe.png",
+            "title": "Tahiti Outdoor Cushion Collection",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_DwHreE": {
+          "type": "collection",
+          "settings": {
+            "collection": "outdoor-chair-cushions",
+            "image": "shopify://shop_images/Naturalstripehb2.png",
+            "title": "Outdoor Chair Cushions",
+            "description": "",
+            "overlay_content": false,
+            "color_text": "#ffffff",
+            "color_overlay": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_Aepw4y",
+        "collection_j4ytyK",
+        "collection_Haj8kA",
+        "collection_gCVGn4",
+        "collection_DwHreE"
+      ],
+      "name": "Collection list",
+      "settings": {
+        "card_style": "card",
+        "image_type": "collection",
+        "image_ratio": "square",
+        "show_products_count": false,
+        "show_view_all": false,
+        "columns": 5,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "images-with-text-overlay": {
+      "type": "images-with-text-overlay",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image_width": "custom",
+            "image_max_width": 50,
+            "image_max_width_mobile": 50
+          }
+        },
+        "spacing": {
+          "type": "spacing",
+          "settings": {
+            "height": 80,
+            "height_mobile": 20
+          }
+        },
+        "subheading": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Tagline",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Example heading",
+            "heading_size": "title-md",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "highlighted_reveal": false
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "spacing",
+        "subheading",
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "transparent_header": false,
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "500px",
+        "content_position_mobile": "items-center justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "#e0a580",
+        "gradient_highlight": "",
+        "color_button_text": "#171717",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 100,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": true,
+        "enable_parallax": true
+      }
+    },
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "blocks": {
+        "breadcrumb": {
+          "type": "breadcrumb",
+          "disabled": true,
+          "settings": {
+            "show_collections_link": true,
+            "show_collection_title": true
+          }
+        },
+        "title": {
+          "type": "title",
+          "disabled": true,
+          "settings": {
+            "title_size": "title-md"
+          }
+        },
+        "description_mER6KD": {
+          "type": "description",
+          "settings": {
+            "text_font": "body",
+            "text_size": "subtext-md",
+            "text_max_size": 20,
+            "text_line_height": 1.6,
+            "text_letter_spacing": 0,
+            "text_capitalize": false,
+            "secondary_color": false
+          }
+        }
+      },
+      "block_order": [
+        "breadcrumb",
+        "title",
+        "description_mER6KD"
+      ],
+      "settings": {
+        "transparent_header": true,
+        "show_image": false,
+        "image_height": "750px",
+        "content_position": "md:items-end md:justify-start",
+        "text_alignment": "left",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_background": "",
+        "gradient_background": "",
+        "color_overlay": "#000000",
+        "overlay_opacity": 40,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": true,
+        "enable_parallax": true,
+        "parallax_direction": "vertical"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "settings": {
+        "product_limit": 6,
+        "columns": 4,
+        "carousel_on_desktop": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "heading": "Recently Viewed",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "highlighted_reveal": false,
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 80,
+        "divider": false,
+        "full_width": false,
+        "rounded": true
+      }
+    },
+    "178037700764503d03": {
+      "type": "apps",
+      "blocks": {
+        "ryviu_product_reviews_ryviu_total_46y9xA": {
+          "type": "shopify://apps/ryviu-product-reviews/blocks/ryviu-total/807ad6ed-1a6a-4559-abea-ed062858d9da",
+          "settings": {
+            "layout_style": "product",
+            "show_when_no_reviews": true,
+            "show_average_rating": false
+          }
+        }
+      },
+      "block_order": [
+        "ryviu_product_reviews_ryviu_total_46y9xA"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    }
+  },
+  "order": [
+    "blocks_BTbA7k",
+    "collection_list_8X7pgG",
+    "collage_cbDJpB",
+    "main-collection",
+    "collection_list_JJNiU7",
+    "images-with-text-overlay",
+    "main-collection-banner",
+    "recently-viewed",
+    "178037700764503d03"
+  ]
+}
