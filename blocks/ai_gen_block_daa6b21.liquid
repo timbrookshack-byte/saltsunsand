@@ -21,9 +21,10 @@
 {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
 
 {% liquid
-  assign hero_image = block.settings.hero_image | default: collection.image
+  assign source_collection = block.settings.hero_collection | default: collection
+  assign hero_image = block.settings.hero_image | default: source_collection.image
   assign has_hero = false
-  if block.settings.enable_hero_image and hero_image != blank and collection != blank
+  if block.settings.enable_hero_image and hero_image != blank
     assign has_hero = true
   endif
 %}
@@ -287,13 +288,19 @@
       "id": "enable_hero_image",
       "label": "Use a background hero image",
       "default": false,
-      "info": "Uses the collection's featured image by default. Set light text colours below so the heading, breadcrumb and SEO text stay readable."
+      "info": "Set light text colours below so the heading, breadcrumb and SEO text stay readable over the image."
+    },
+    {
+      "type": "collection",
+      "id": "hero_collection",
+      "label": "Collection (image source)",
+      "info": "Pick a collection to use its featured image. Leave blank to automatically use the CURRENT collection's image on each collection page."
     },
     {
       "type": "image_picker",
       "id": "hero_image",
       "label": "Image override",
-      "info": "Optional. Falls back to the collection's featured image."
+      "info": "Optional. Overrides the collection image above with a fixed image."
     },
     {
       "type": "range",
