@@ -158,7 +158,7 @@
       },
       "1990815452989453926": {
         "type": "shopify://apps/ryviu-product-reviews/blocks/ryviu-js/807ad6ed-1a6a-4559-abea-ed062858d9da",
-        "disabled": true,
+        "disabled": false,
         "settings": {}
       }
     }
