@@ -93,9 +93,7 @@
         {%- endif -%}
 
         {%- if show_rating -%}
-          <div class="ryviu-collection">
-            <ryviu-widget-total collection=1 product_id="{{product.id}}" handle="{{product.handle}}" reviews_data="{{product.metafields.ryviu.product_reviews_info  | escape  }}" ></ryviu-widget-total>
-          </div>            
+        
           {%- liquid
             assign rating_max = 5
           
