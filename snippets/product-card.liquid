@@ -376,7 +376,10 @@
         <p class="grow{% if title_truncation %} line-clamp-{{ title_line_limit }}{% endif %}">
           <a class="product-card__title reversed-link text-base-xl font-medium leading-tight" href="{{ product_url }}">
             {{- product.title | escape -}}
-          </a>           
+          </a>   
+          <span class="ryviu-collection">
+            <ryviu-widget-total collection=1 product_id="{{product.id}}" handle="{{product.handle}}" reviews_data="{{product.metafields.ryviu.product_reviews_info  | escape  }}" ></ryviu-widget-total>
+          </span>                   
         </p>
 
         <div class="flex flex-col gap-2">
