@@ -73,8 +73,10 @@
     <a href="{{ collection.url }}" class="media-card__link flex flex-col w-full h-full relative" aria-label="{{ collection_title | escape }}">
       <div class="media media--{{ image_ratio }} relative overflow-hidden">
         {%- if collection_image != blank -%}
-          {%- capture card_sizes -%}(max-width: 767px) calc((100vw - var(--page-padding, 16px) * 2) / 2), (max-width: 1023px) calc(min({{ settings.page_width }}px, 100vw) / 3), calc(min({{ settings.page_width }}px, 100vw) / 4){%- endcapture -%}
-          {{- collection_image | image_url: width: collection_image.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', sizes: card_sizes, is: 'lazy-image' -}}
+          {%- assign card_cols = columns | default: 4 -%}
+          {%- assign card_cols_mobile = columns_mobile | default: 2 -%}
+          {%- capture card_sizes -%}(max-width: 767px) calc((100vw - var(--page-padding, 16px) * 2) / {{ card_cols_mobile }}), calc(min({{ settings.page_width }}px, 100vw) / {{ card_cols }}){%- endcapture -%}
+          {{- collection_image | image_url: width: collection_image.width | image_tag: loading: 'lazy', widths: '320,480,640,768,960,1200,1500,1800', sizes: card_sizes, is: 'lazy-image' -}}
         {%- else -%}
           <span class="block aspect-{{ image_ratio }}"></span>
         {%- endif -%}
