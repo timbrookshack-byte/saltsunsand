@@ -132,7 +132,7 @@
         "card_style": "card",
         "image_type": "collection",
         "image_ratio": "landscape",
-        "show_products_count": false,
+        "show_products_count": true,
         "show_view_all": false,
         "columns": 5,
         "carousel_on_desktop": true,
