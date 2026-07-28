@@ -324,6 +324,7 @@
       "blocks": {
         "subcollections": {
           "type": "subcollections",
+          "disabled": true,
           "settings": {
             "menu": "outdoor-cushion-by-style",
             "show_count": true
@@ -689,7 +690,9 @@
           "settings": {
             "layout_style": "product",
             "show_when_no_reviews": true,
-            "show_average_rating": false
+            "show_average_rating": false,
+            "use_translation_template": true,
+            "custom_template": "Rated {rating} \"Excellent\" | {count}+ Reviews"
           }
         }
       },
