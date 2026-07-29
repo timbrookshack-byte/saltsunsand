@@ -119,12 +119,11 @@
       "blocks": {
         "collection-5": {
           "type": "collection",
-          "disabled": true,
           "settings": {
-            "collection": "sale",
-            "image": "shopify://shop_images/Summer_Collections_24-25_1000_x_1000_mm.png",
-            "title": "Shop SITEWIDE SALE",
-            "description": "Save up to 60% plus Free Shipping on orders over $100",
+            "collection": "outdoor-balcony-sets",
+            "image": "shopify://shop_images/IMG_9259.jpg",
+            "title": "Outdoor Balcony Sets",
+            "description": "Small space, big outdoor upgrade. Our new 3pc Balcony Sets are perfect for morning coffee, sunset drinks and relaxed outdoor dining. Compact, stylish and easy to fit into balconies, patios and courtyards.",
             "overlay_content": false,
             "color_text": "#ffffff",
             "color_overlay": "#000000",
@@ -185,6 +184,7 @@
         },
         "collection-6": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "outdoor-dog-beds",
             "image": "shopify://shop_images/ChatGPT_Image_Aug_6_2025_11_59_58_AM.png",
