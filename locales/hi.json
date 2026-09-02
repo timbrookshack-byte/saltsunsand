@@ -567,7 +567,8 @@
       "waiting_for_stock": "इन्वेंटरी आने वाली है",
       "pre_order_arriving": "प्री-ऑर्डर — {{ date }} को आ रहा है",
       "pre_order_arriving_soon": "प्री-ऑर्डर — जल्द आ रहा है",
-      "pre_order_available_count": "{{ count }} प्री-ऑर्डर के लिए उपलब्ध"
+      "pre_order_available_count": "{{ count }} प्री-ऑर्डर के लिए उपलब्ध",
+      "pre_order_badge": "पूर्व आदेश · {{ date }}"
     },
     "pickup_availability": {
       "title": "पिकअप उपलब्धता",

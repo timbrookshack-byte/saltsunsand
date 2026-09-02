@@ -554,7 +554,8 @@
       "waiting_for_stock": "Inventaario matkalla",
       "pre_order_arriving": "Ennakkotilaus — saapuu {{ date }}",
       "pre_order_arriving_soon": "Ennakkotilaus — saapuu pian",
-      "pre_order_available_count": "{{ count }} saatavilla ennakkotilaukseen"
+      "pre_order_available_count": "{{ count }} saatavilla ennakkotilaukseen",
+      "pre_order_badge": "Ennakkotilaus · {{ date }}"
     },
     "pickup_availability": {
       "title": "Noudon saatavuus",

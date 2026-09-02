@@ -567,7 +567,8 @@
       "waiting_for_stock": "Inventārs ceļā",
       "pre_order_arriving": "Iepriekšpasūtījums — piegāde {{ date }}",
       "pre_order_arriving_soon": "Iepriekšpasūtījums — piegāde drīzumā",
-      "pre_order_available_count": "{{ count }} pieejami iepriekšpasūtījumam"
+      "pre_order_available_count": "{{ count }} pieejami iepriekšpasūtījumam",
+      "pre_order_badge": "Iepriekšēja pasūtīšana · {{ date }}"
     },
     "pickup_availability": {
       "title": "Saņemšanas pieejamība",

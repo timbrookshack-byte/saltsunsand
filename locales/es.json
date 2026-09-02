@@ -567,7 +567,8 @@
       "waiting_for_stock": "Inventario en camino",
       "pre_order_arriving": "Reserva — llega el {{ date }}",
       "pre_order_arriving_soon": "Reserva — llega pronto",
-      "pre_order_available_count": "{{ count }} disponibles para reservar"
+      "pre_order_available_count": "{{ count }} disponibles para reservar",
+      "pre_order_badge": "Hacer un pedido · {{ date }}"
     },
     "pickup_availability": {
       "title": "Disponibilidad de retiro",

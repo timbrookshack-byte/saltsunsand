@@ -567,7 +567,8 @@
       "waiting_for_stock": "Hàng trên đường về",
       "pre_order_arriving": "Đặt trước — về ngày {{ date }}",
       "pre_order_arriving_soon": "Đặt trước — sắp về",
-      "pre_order_available_count": "{{ count }} có thể đặt trước"
+      "pre_order_available_count": "{{ count }} có thể đặt trước",
+      "pre_order_badge": "Đặt hàng trước · {{ date }}"
     },
     "pickup_availability": {
       "title": "Khả năng nhận hàng",

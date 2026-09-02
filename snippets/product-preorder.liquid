@@ -48,6 +48,7 @@
 {%- if is_preorder -%}
   {%- liquid
     assign preorder_eta = preorder_variant.metafields.custom.next_po_date_360.value | date: '%-d %B %Y'
+    assign preorder_eta_short = preorder_variant.metafields.custom.next_po_date_360.value | date: '%-d %b'
     assign preorder_cap = preorder_variant.metafields.custom.preorder_cap.value | plus: 0
     assign preorder_threshold = threshold | default: 0
 
@@ -71,15 +72,26 @@
     else
       assign preorder_message = 'products.inventory.pre_order_arriving_soon' | t
     endif
+
+    comment
+      On a card the date is the whole point. "Pre-order" alone is an unknown and
+      reads as "you can't have this"; a date turns it into a delivery promise the
+      shopper can judge. The long-form message survives only as the title, which
+      touch devices never show — hence the short date in the label itself.
+    endcomment
+    if preorder_eta_short != blank
+      assign preorder_badge_label = 'products.inventory.pre_order_badge' | t: date: preorder_eta_short
+    else
+      assign preorder_badge_label = 'products.product.pre_order' | t
+    endif
   -%}
   {%- case display -%}
     {%- when 'badge' -%}
       <span
-        class="badge badge--preorder{% if vertical_badges %} badge--vertical{% endif %}{% if class != blank %} {{ class }}{% endif %} flex items-center gap-1d5 font-medium leading-none rounded-full"
-        style="--badge-background: rgb(var(--color-foreground) / 0.08);--badge-foreground: rgb(var(--color-foreground));"
+        class="badge badge--highlight badge--preorder{% if vertical_badges %} badge--vertical{% endif %}{% if class != blank %} {{ class }}{% endif %} flex items-center gap-1d5 font-medium leading-none rounded-full"
         title="{{ preorder_message | escape }}"
       >
-        {{- 'products.product.pre_order' | t -}}
+        {{- preorder_badge_label -}}
       </span>
     {%- else -%}
       <div class="alert alert--info inline-flex items-center gap-3">

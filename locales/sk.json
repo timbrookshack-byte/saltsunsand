@@ -567,7 +567,8 @@
       "waiting_for_stock": "Tovar je na ceste",
       "pre_order_arriving": "Predobjednávka — príde {{ date }}",
       "pre_order_arriving_soon": "Predobjednávka — príde čoskoro",
-      "pre_order_available_count": "{{ count }} na predobjednanie"
+      "pre_order_available_count": "{{ count }} na predobjednanie",
+      "pre_order_badge": "Predobjednávka · {{ date }}"
     },
     "pickup_availability": {
       "title": "Osobný odber",

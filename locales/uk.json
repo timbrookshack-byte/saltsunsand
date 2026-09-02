@@ -567,7 +567,8 @@
       "waiting_for_stock": "Інвентар в дорозі",
       "pre_order_arriving": "Попереднє замовлення — прибуде {{ date }}",
       "pre_order_arriving_soon": "Попереднє замовлення — прибуде незабаром",
-      "pre_order_available_count": "{{ count }} доступно для попереднього замовлення"
+      "pre_order_available_count": "{{ count }} доступно для попереднього замовлення",
+      "pre_order_badge": "Попереднє замовлення · {{ date }}"
     },
     "pickup_availability": {
       "title": "Можливість самовивозу",

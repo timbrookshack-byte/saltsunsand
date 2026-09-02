@@ -567,7 +567,8 @@
       "waiting_for_stock": "庫存在路上",
       "pre_order_arriving": "預購 — {{ date }} 到貨",
       "pre_order_arriving_soon": "預購 — 即將到貨",
-      "pre_order_available_count": "{{ count }} 件可預購"
+      "pre_order_available_count": "{{ count }} 件可預購",
+      "pre_order_badge": "預購 · {{ date }}"
     },
     "pickup_availability": {
       "title": "提供接送服務",

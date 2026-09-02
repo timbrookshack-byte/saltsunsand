@@ -567,7 +567,8 @@
       "waiting_for_stock": "재고가 진행 중입니다.",
       "pre_order_arriving": "선주문 — {{ date }} 입고 예정",
       "pre_order_arriving_soon": "선주문 — 곧 입고 예정",
-      "pre_order_available_count": "{{ count }}개 선주문 가능"
+      "pre_order_available_count": "{{ count }}개 선주문 가능",
+      "pre_order_badge": "선주문 · {{ date }}"
     },
     "pickup_availability": {
       "title": "픽업 가능 여부",

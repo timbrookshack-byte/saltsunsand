@@ -567,7 +567,8 @@
       "waiting_for_stock": "在庫の準備中",
       "pre_order_arriving": "予約注文 — {{ date }} 入荷予定",
       "pre_order_arriving_soon": "予約注文 — まもなく入荷",
-      "pre_order_available_count": "予約可能 {{ count }} 点"
+      "pre_order_available_count": "予約可能 {{ count }} 点",
+      "pre_order_badge": "予約 · {{ date }}"
     },
     "pickup_availability": {
       "title": "ピックアップの有無",

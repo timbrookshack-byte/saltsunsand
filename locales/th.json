@@ -567,7 +567,8 @@
       "waiting_for_stock": "สินค้าคงคลังระหว่างทาง",
       "pre_order_arriving": "สั่งจอง — มาถึง {{ date }}",
       "pre_order_arriving_soon": "สั่งจอง — มาถึงเร็ว ๆ นี้",
-      "pre_order_available_count": "{{ count }} ชิ้นพร้อมสั่งจอง"
+      "pre_order_available_count": "{{ count }} ชิ้นพร้อมสั่งจอง",
+      "pre_order_badge": "สั่งของล่วงหน้า · {{ date }}"
     },
     "pickup_availability": {
       "title": "ความพร้อมในการรับสินค้า",

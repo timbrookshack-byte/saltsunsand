@@ -567,7 +567,8 @@
       "waiting_for_stock": "Lager på väg",
       "pre_order_arriving": "Förbeställning — kommer {{ date }}",
       "pre_order_arriving_soon": "Förbeställning — kommer snart",
-      "pre_order_available_count": "{{ count }} kan förbeställas"
+      "pre_order_available_count": "{{ count }} kan förbeställas",
+      "pre_order_badge": "Förbeställ · {{ date }}"
     },
     "pickup_availability": {
       "title": "Lager på väg",

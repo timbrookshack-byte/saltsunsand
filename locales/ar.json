@@ -567,7 +567,8 @@
       "waiting_for_stock": "المخزون في الطريق",
       "pre_order_arriving": "الطلب المسبق — يصل في {{ date }}",
       "pre_order_arriving_soon": "الطلب المسبق — يصل قريبًا",
-      "pre_order_available_count": "{{ count }} متاح للطلب المسبق"
+      "pre_order_available_count": "{{ count }} متاح للطلب المسبق",
+      "pre_order_badge": "الطلب المسبق · {{ date }}"
     },
     "pickup_availability": {
       "title": "توفر خدمة الاستلام",

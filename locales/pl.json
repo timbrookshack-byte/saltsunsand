@@ -567,7 +567,8 @@
       "waiting_for_stock": "Inwentarz w drodze",
       "pre_order_arriving": "Przedsprzedaż — dostawa {{ date }}",
       "pre_order_arriving_soon": "Przedsprzedaż — dostawa wkrótce",
-      "pre_order_available_count": "{{ count }} dostępnych w przedsprzedaży"
+      "pre_order_available_count": "{{ count }} dostępnych w przedsprzedaży",
+      "pre_order_badge": "Przed Sprzedaż · {{ date }}"
     },
     "pickup_availability": {
       "title": "Dostępność odbioru",

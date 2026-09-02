@@ -567,7 +567,8 @@
       "waiting_for_stock": "Inventar pe drum",
       "pre_order_arriving": "Precomandă — sosește pe {{ date }}",
       "pre_order_arriving_soon": "Precomandă — sosește în curând",
-      "pre_order_available_count": "{{ count }} disponibile la precomandă"
+      "pre_order_available_count": "{{ count }} disponibile la precomandă",
+      "pre_order_badge": "Precomandă · {{ date }}"
     },
     "pickup_availability": {
       "title": "Disponibilitate pentru ridicare",

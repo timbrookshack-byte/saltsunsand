@@ -567,7 +567,8 @@
       "waiting_for_stock": "Stock a caminho",
       "pre_order_arriving": "Pré-encomenda — chega a {{ date }}",
       "pre_order_arriving_soon": "Pré-encomenda — chega em breve",
-      "pre_order_available_count": "{{ count }} disponíveis para pré-encomenda"
+      "pre_order_available_count": "{{ count }} disponíveis para pré-encomenda",
+      "pre_order_badge": "Pré-encomenda · {{ date }}"
     },
     "pickup_availability": {
       "title": "Disponibilidade para levantamento",

@@ -567,7 +567,8 @@
       "waiting_for_stock": "Inventaris onderweg",
       "pre_order_arriving": "Pre-order — arriveert op {{ date }}",
       "pre_order_arriving_soon": "Pre-order — arriveert binnenkort",
-      "pre_order_available_count": "{{ count }} beschikbaar voor pre-order"
+      "pre_order_available_count": "{{ count }} beschikbaar voor pre-order",
+      "pre_order_badge": "Vooraf bestellen · {{ date }}"
     },
     "pickup_availability": {
       "title": "Beschikbaarheid voor afhalen",

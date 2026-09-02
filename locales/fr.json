@@ -567,7 +567,8 @@
       "waiting_for_stock": "Inventaire en cours",
       "pre_order_arriving": "Précommande — arrivée le {{ date }}",
       "pre_order_arriving_soon": "Précommande — arrivée prochainement",
-      "pre_order_available_count": "{{ count }} disponibles en précommande"
+      "pre_order_available_count": "{{ count }} disponibles en précommande",
+      "pre_order_badge": "Pré-commander · {{ date }}"
     },
     "pickup_availability": {
       "title": "Disponibilité du service de retrait",

@@ -567,7 +567,8 @@
       "waiting_for_stock": "אספקה בדרך",
       "pre_order_arriving": "הזמנה מוקדמת — מגיע ב־{{ date }}",
       "pre_order_arriving_soon": "הזמנה מוקדמת — מגיע בקרוב",
-      "pre_order_available_count": "{{ count }} זמינים להזמנה מוקדמת"
+      "pre_order_available_count": "{{ count }} זמינים להזמנה מוקדמת",
+      "pre_order_badge": "הזמנה מוקדמת · {{ date }}"
     },
     "pickup_availability": {
       "title": "איסוף עצמי זמין",
