@@ -48,6 +48,12 @@
     assign preorder_eta = preorder_variant.metafields.custom.next_po_date_360.value | date: '%-d %B %Y'
     assign preorder_cap = preorder_variant.metafields.custom.preorder_cap.value | plus: 0
 
+    comment
+      Only surface the remaining count as scarcity when it is genuinely low
+      (< 10). A large allowance (e.g. 130) kills urgency, so hide it above this.
+    endcomment
+    assign preorder_low_threshold = 10
+
     if preorder_eta != blank
       assign preorder_message = 'products.inventory.pre_order_arriving' | t: date: preorder_eta
     else
@@ -68,8 +74,8 @@
         {%- render 'icon', icon: 'ellipse', size: 'xs', class: 'shrink-0' -%}
         <span class="text-sm font-medium leading-tight">
           {{- preorder_message -}}
-          {%- if show_cap and preorder_cap > 0 -%}
-            {{- ' ' -}}
+          {%- if show_cap and preorder_cap > 0 and preorder_cap < preorder_low_threshold -%}
+            {{- ' · ' -}}
             {{- 'products.inventory.pre_order_available_count' | t: count: preorder_cap -}}
           {%- endif -%}
         </span>
