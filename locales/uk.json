@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "В наявності",
       "will_not_ship_until": "Готовий до відправлення {{ date }}",
       "will_be_in_stock_after": "Знову в наявності {{ date }}",
-      "waiting_for_stock": "Інвентар в дорозі"
+      "waiting_for_stock": "Інвентар в дорозі",
+      "pre_order_arriving": "Попереднє замовлення — прибуде {{ date }}",
+      "pre_order_arriving_soon": "Попереднє замовлення — прибуде незабаром",
+      "pre_order_available_count": "{{ count }} доступно для попереднього замовлення"
     },
     "pickup_availability": {
       "title": "Можливість самовивозу",

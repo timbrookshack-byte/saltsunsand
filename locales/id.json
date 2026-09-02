@@ -551,7 +551,10 @@
       "out_of_stock_continue_selling": "Ada stok",
       "will_not_ship_until": "Siap untuk dikirim {{ date }}",
       "will_be_in_stock_after": "Kembali tersedia {{ date }}",
-      "waiting_for_stock": "Inventaris dalam perjalanan"
+      "waiting_for_stock": "Inventaris dalam perjalanan",
+      "pre_order_arriving": "Pre-order — tiba {{ date }}",
+      "pre_order_arriving_soon": "Pre-order — segera tiba",
+      "pre_order_available_count": "{{ count }} tersedia untuk pre-order"
     },
     "pickup_availability": {
       "title": "Ketersediaan penjemputan",

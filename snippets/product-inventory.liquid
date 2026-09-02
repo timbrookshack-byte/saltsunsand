@@ -1,7 +1,7 @@
 {%- doc -%}
   Renders dynamic inventory status with stock levels, warnings, and incoming inventory notifications.
 
-  Displays real-time inventory information using Shopify's inventory tracking system. Shows different states including in-stock quantities, low stock warnings with progress bars, out-of-stock messages, and incoming inventory dates. Automatically updates when variants are selected.
+  Displays real-time inventory information using Shopify's inventory tracking system. Shows different states including in-stock quantities, low stock warnings with progress bars, out-of-stock messages, and incoming inventory dates. Automatically updates when variants are selected. Variants the Shack360 stock bridge has flagged as on order show the pre-order notice instead, since their native inventory is the inbound allowance rather than stock on hand.
 
   @param {object} product - Shopify product object with inventory data
   @param {object} block - Section block with inventory display settings
@@ -17,14 +17,42 @@
   %}
 {%- enddoc -%}
 
-{%- assign product_variant = product.selected_or_first_available_variant -%}
+{%- liquid
+  assign product_variant = product.selected_or_first_available_variant
+  assign preorder_flag = product_variant.metafields.custom.is_on_order.value
+
+  comment
+    Both halves matter — see product-preorder.liquid. A variant whose pre-order
+    allowance has just sold out keeps the flag until the next sync, and must
+    fall through to the out-of-stock branch below rather than promise a date.
+  endcomment
+  assign is_preorder = false
+  if preorder_flag == true or preorder_flag == 'true'
+    if product_variant.available
+      assign is_preorder = true
+    endif
+  endif
+
+  assign show_preorder_cap = false
+  unless block.settings.show_inventory_quantity == 'none'
+    assign show_preorder_cap = true
+  endunless
+-%}
 <div
-  class="product__inventory no-js-hidden{% if product_variant.inventory_management != 'shopify' %} sr-only{% endif %}"
+  class="product__inventory no-js-hidden{% if product_variant.inventory_management != 'shopify' and is_preorder == false %} sr-only{% endif %}"
   id="Inventory-{{ section_id }}-{{ product_id }}"
   role="status"
   {{ block.shopify_attributes }}
 >
-  {%- if product_variant.inventory_management == 'shopify' -%}
+  {%- comment -%}
+    Pre-order is checked first and deliberately wins over every stock state
+    below. While a container is inbound the stock bridge sets native available
+    to the pre-order allowance, so the in-stock branch would otherwise claim
+    those units are on the shelf.
+  {%- endcomment -%}
+  {%- if is_preorder -%}
+    {%- render 'product-preorder', variant: product_variant, show_cap: show_preorder_cap -%}
+  {%- elsif product_variant.inventory_management == 'shopify' -%}
     {%- if product_variant.inventory_quantity > 0 -%}
       {%- if product_variant.inventory_quantity <= block.settings.inventory_threshold -%}
         <div class="grid gap-3 w-full">

@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "Auf Lager",
       "will_not_ship_until": "Auf Lager, versandfertig {{ date }}",
       "will_be_in_stock_after": "Wieder auf Lager {{ date }}",
-      "waiting_for_stock": "Inventar unterwegs"
+      "waiting_for_stock": "Inventar unterwegs",
+      "pre_order_arriving": "Vorbestellung — Lieferung am {{ date }}",
+      "pre_order_arriving_soon": "Vorbestellung — Lieferung in Kürze",
+      "pre_order_available_count": "{{ count }} zur Vorbestellung verfügbar"
     },
     "pickup_availability": {
       "title": "Verfügbarkeit von Abholungen",

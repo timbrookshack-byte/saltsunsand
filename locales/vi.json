@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "Còn hàng",
       "will_not_ship_until": "Sẵn sàng giao hàng vào {{ date }}",
       "will_be_in_stock_after": "Có hàng lại vào {{ date }}",
-      "waiting_for_stock": "Hàng trên đường về"
+      "waiting_for_stock": "Hàng trên đường về",
+      "pre_order_arriving": "Đặt trước — về ngày {{ date }}",
+      "pre_order_arriving_soon": "Đặt trước — sắp về",
+      "pre_order_available_count": "{{ count }} có thể đặt trước"
     },
     "pickup_availability": {
       "title": "Khả năng nhận hàng",

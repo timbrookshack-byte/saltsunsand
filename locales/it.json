@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "Disponibile",
       "will_not_ship_until": "Pronto a spedire {{ date }}",
       "will_be_in_stock_after": "Di nuovo disponibile {{ date }}",
-      "waiting_for_stock": "Inventario in arrivo"
+      "waiting_for_stock": "Inventario in arrivo",
+      "pre_order_arriving": "Pre-ordine — in arrivo il {{ date }}",
+      "pre_order_arriving_soon": "Pre-ordine — in arrivo a breve",
+      "pre_order_available_count": "{{ count }} disponibili in pre-ordine"
     },
     "pickup_availability": {
       "title": "Disponibilità di ritiro",

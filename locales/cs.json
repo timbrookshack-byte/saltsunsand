@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "Skladem",
       "will_not_ship_until": "Připraveno k odeslání {{ date }}",
       "will_be_in_stock_after": "Opět skladem {{ date }}",
-      "waiting_for_stock": "Zboží je na cestě"
+      "waiting_for_stock": "Zboží je na cestě",
+      "pre_order_arriving": "Předobjednávka — dorazí {{ date }}",
+      "pre_order_arriving_soon": "Předobjednávka — dorazí brzy",
+      "pre_order_available_count": "{{ count }} k předobjednání"
     },
     "pickup_availability": {
       "title": "Osobní odběr",

@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "Op voorraad",
       "will_not_ship_until": "Klaar voor verzending {{ date }}",
       "will_be_in_stock_after": "Weer op voorraad {{ date }}",
-      "waiting_for_stock": "Inventaris onderweg"
+      "waiting_for_stock": "Inventaris onderweg",
+      "pre_order_arriving": "Pre-order — arriveert op {{ date }}",
+      "pre_order_arriving_soon": "Pre-order — arriveert binnenkort",
+      "pre_order_available_count": "{{ count }} beschikbaar voor pre-order"
     },
     "pickup_availability": {
       "title": "Beschikbaarheid voor afhalen",

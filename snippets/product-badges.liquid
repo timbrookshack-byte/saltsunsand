@@ -4,7 +4,7 @@
   Displays promotional badges, custom labels, and calculated savings on product cards and pages.
 
   @param {object} product - Shopify product object with price and metafield data
-  @param {object} [variant] - Specific variant for single badge display
+  @param {object} [variant] - Specific variant for single badge display, and the variant the pre-order badge describes
   @param {boolean} [use_variant] - Show variant sale badge
   @param {boolean} [vertical_badges] - Show badges vertically
   @param {boolean} [show_sold_out] - Enable sold out badge display
@@ -21,6 +21,8 @@
 {%- enddoc -%}
 
 {%- liquid
+  assign badge_variant = variant | default: product.selected_or_first_available_variant
+
   if show_save_amount
     if use_variant
       assign target = variant | default: product.selected_or_first_available_variant
@@ -64,6 +66,12 @@
       -%}
     </span>
   {%- endif -%}
+
+  {%- comment -%}
+    Sold out here but a container is inbound — the units are buyable, so this
+    badge says why rather than letting the card read as ordinary stock.
+  {%- endcomment -%}
+  {%- render 'product-preorder', variant: badge_variant, display: 'badge', vertical_badges: vertical_badges -%}
 
   {%- if show_sold_out -%}
     {%- unless product.available -%}

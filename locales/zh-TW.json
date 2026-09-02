@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "有存貨",
       "will_not_ship_until": "準備出貨{{ date }}",
       "will_be_in_stock_after": "又有貨了{{ date }}",
-      "waiting_for_stock": "庫存在路上"
+      "waiting_for_stock": "庫存在路上",
+      "pre_order_arriving": "預購 — {{ date }} 到貨",
+      "pre_order_arriving_soon": "預購 — 即將到貨",
+      "pre_order_available_count": "{{ count }} 件可預購"
     },
     "pickup_availability": {
       "title": "提供接送服務",

@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "I lager",
       "will_not_ship_until": "Redo att skickas {{ date }}",
       "will_be_in_stock_after": "Tillbaka i lager {{ date }}",
-      "waiting_for_stock": "Lager på väg"
+      "waiting_for_stock": "Lager på väg",
+      "pre_order_arriving": "Förbeställning — kommer {{ date }}",
+      "pre_order_arriving_soon": "Förbeställning — kommer snart",
+      "pre_order_available_count": "{{ count }} kan förbeställas"
     },
     "pickup_availability": {
       "title": "Lager på väg",

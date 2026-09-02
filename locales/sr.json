@@ -560,6 +560,9 @@
       "will_not_ship_until": "Спремно за испоруку {{ date }}",
       "will_be_in_stock_after": "Поново на залихама {{ date }}",
       "waiting_for_stock": "Инвентар на путу",
+      "pre_order_arriving": "Пред-наруџбина — стиже {{ date }}",
+      "pre_order_arriving_soon": "Пред-наруџбина — стиже ускоро",
+      "pre_order_available_count": "{{ count }} доступно за пред-наруџбину",
       "low_stock_with_count": {
         "one": "Пожурите, још само {{ count }} артикала на лагеру!",
         "other": "Пожурите, још само {{ count }} артикала на лагеру!"

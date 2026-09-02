@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "Raktáron",
       "will_not_ship_until": "Szállításra kész {{ date }}",
       "will_be_in_stock_after": "Újra készleten {{ date }}",
-      "waiting_for_stock": "Készlet útközben"
+      "waiting_for_stock": "Készlet útközben",
+      "pre_order_arriving": "Előrendelés — érkezik: {{ date }}",
+      "pre_order_arriving_soon": "Előrendelés — hamarosan érkezik",
+      "pre_order_available_count": "{{ count }} előrendelhető"
     },
     "pickup_availability": {
       "title": "Átvétel elérhetősége",

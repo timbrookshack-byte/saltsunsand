@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "In stock",
       "will_not_ship_until": "Ready to ship {{ date }}",
       "will_be_in_stock_after": "Back in stock {{ date }}",
-      "waiting_for_stock": "Inventory on the way"
+      "waiting_for_stock": "Inventory on the way",
+      "pre_order_arriving": "Pre-order — arriving {{ date }}",
+      "pre_order_arriving_soon": "Pre-order — arriving soon",
+      "pre_order_available_count": "{{ count }} available to pre-order"
     },
     "pickup_availability": {
       "title": "Pickup availability",

@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "Em estoque",
       "will_not_ship_until": "Pronto para enviar {{ date }}",
       "will_be_in_stock_after": "De volta ao estoque {{ date }}",
-      "waiting_for_stock": "Estoque a caminho"
+      "waiting_for_stock": "Estoque a caminho",
+      "pre_order_arriving": "Pré-venda — chega em {{ date }}",
+      "pre_order_arriving_soon": "Pré-venda — chega em breve",
+      "pre_order_available_count": "{{ count }} disponíveis para pré-venda"
     },
     "pickup_availability": {
       "title": "Disponibilidade de retirada",

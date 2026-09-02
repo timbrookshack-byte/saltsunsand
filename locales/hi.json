@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "स्टॉक में",
       "will_not_ship_until": "भेजने के लिए तैयार {{ date }}",
       "will_be_in_stock_after": "पिछली तरफ़ का भंडार {{ date }}",
-      "waiting_for_stock": "इन्वेंटरी आने वाली है"
+      "waiting_for_stock": "इन्वेंटरी आने वाली है",
+      "pre_order_arriving": "प्री-ऑर्डर — {{ date }} को आ रहा है",
+      "pre_order_arriving_soon": "प्री-ऑर्डर — जल्द आ रहा है",
+      "pre_order_available_count": "{{ count }} प्री-ऑर्डर के लिए उपलब्ध"
     },
     "pickup_availability": {
       "title": "पिकअप उपलब्धता",

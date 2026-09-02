@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "في الأوراق المالية",
       "will_not_ship_until": "جاهز للشحن {{ date }}",
       "will_be_in_stock_after": "متوفر مرة أخرى في المخزون {{ date }}",
-      "waiting_for_stock": "المخزون في الطريق"
+      "waiting_for_stock": "المخزون في الطريق",
+      "pre_order_arriving": "الطلب المسبق — يصل في {{ date }}",
+      "pre_order_arriving_soon": "الطلب المسبق — يصل قريبًا",
+      "pre_order_available_count": "{{ count }} متاح للطلب المسبق"
     },
     "pickup_availability": {
       "title": "توفر خدمة الاستلام",

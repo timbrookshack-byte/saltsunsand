@@ -1,0 +1,78 @@
+{%- doc -%}
+  Renders the pre-order state for a variant.
+
+  A variant is "on order" when it is sold out in the Wakerley warehouse but a
+  supplier container is already inbound. The Shack360 stock bridge writes that
+  state onto each variant as `custom.*` metafields, and separately caps native
+  Shopify inventory at the sellable ceiling with an inventory policy of DENY —
+  so the units are legitimately buyable and this snippet only has to say so.
+  Without it an inbound container reads on the storefront as ordinary stock.
+
+  The ETA is only ever read inside the on-order branch. The bridge leaves the
+  last known date in place when an item comes back into stock, so a stale date
+  must never be shown on its own.
+
+  @param {object} variant - Variant to describe. Falls back to the product's selected or first available variant.
+  @param {object} [product] - Product, used only to resolve that fallback.
+  @param {string} [display] - 'badge' for product cards, anything else for the full product-page notice.
+  @param {boolean} [show_cap] - Also show how many units are still available to pre-order.
+  @param {boolean} [vertical_badges] - Match the orientation of the surrounding badge stack.
+  @param {string} [class] - Extra classes for the badge form.
+
+  @example
+  {% render 'product-preorder', variant: product.selected_or_first_available_variant, show_cap: true %}
+{%- enddoc -%}
+
+{%- liquid
+  assign preorder_variant = variant | default: product.selected_or_first_available_variant
+  assign preorder_flag = preorder_variant.metafields.custom.is_on_order.value
+
+  comment
+    The flag alone is not enough. The bridge re-syncs every 15 minutes, so
+    between the moment a pre-order allowance sells out and the next run the
+    variant still carries is_on_order while Shopify already reports it
+    unavailable. Requiring both keeps the notice off a sold-out variant.
+    product-inventory.liquid repeats this pair to decide fall-through — keep
+    the two in step.
+  endcomment
+  assign is_preorder = false
+  if preorder_flag == true or preorder_flag == 'true'
+    if preorder_variant.available
+      assign is_preorder = true
+    endif
+  endif
+-%}
+
+{%- if is_preorder -%}
+  {%- liquid
+    assign preorder_eta = preorder_variant.metafields.custom.next_po_date_360.value | date: '%-d %B %Y'
+    assign preorder_cap = preorder_variant.metafields.custom.preorder_cap.value | plus: 0
+
+    if preorder_eta != blank
+      assign preorder_message = 'products.inventory.pre_order_arriving' | t: date: preorder_eta
+    else
+      assign preorder_message = 'products.inventory.pre_order_arriving_soon' | t
+    endif
+  -%}
+  {%- case display -%}
+    {%- when 'badge' -%}
+      <span
+        class="badge badge--preorder{% if vertical_badges %} badge--vertical{% endif %}{% if class != blank %} {{ class }}{% endif %} flex items-center gap-1d5 font-medium leading-none rounded-full"
+        style="--badge-background: rgb(var(--color-foreground) / 0.08);--badge-foreground: rgb(var(--color-foreground));"
+        title="{{ preorder_message | escape }}"
+      >
+        {{- 'products.product.pre_order' | t -}}
+      </span>
+    {%- else -%}
+      <div class="alert alert--info inline-flex items-center gap-3">
+        {%- render 'icon', icon: 'ellipse', size: 'xs', class: 'shrink-0' -%}
+        <span class="text-sm font-medium leading-tight">
+          {{- preorder_message -}}
+          {%- if show_cap and preorder_cap > 0 -%}
+            {{- ' ' -}}
+            {{- 'products.inventory.pre_order_available_count' | t: count: preorder_cap -}}
+          {%- endif -%}
+        </span>
+      </div>
+  {%- endcase -%}
+{%- endif -%}

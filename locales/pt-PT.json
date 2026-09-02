@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "Em stock",
       "will_not_ship_until": "Pronto para enviar {{ date }}",
       "will_be_in_stock_after": "De volta ao stock {{ date }}",
-      "waiting_for_stock": "Stock a caminho"
+      "waiting_for_stock": "Stock a caminho",
+      "pre_order_arriving": "Pré-encomenda — chega a {{ date }}",
+      "pre_order_arriving_soon": "Pré-encomenda — chega em breve",
+      "pre_order_available_count": "{{ count }} disponíveis para pré-encomenda"
     },
     "pickup_availability": {
       "title": "Disponibilidade para levantamento",

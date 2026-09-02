@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "În stoc",
       "will_not_ship_until": "Gata de expediat {{ date }}",
       "will_be_in_stock_after": "Înapoi în stoc {{ date }}",
-      "waiting_for_stock": "Inventar pe drum"
+      "waiting_for_stock": "Inventar pe drum",
+      "pre_order_arriving": "Precomandă — sosește pe {{ date }}",
+      "pre_order_arriving_soon": "Precomandă — sosește în curând",
+      "pre_order_available_count": "{{ count }} disponibile la precomandă"
     },
     "pickup_availability": {
       "title": "Disponibilitate pentru ridicare",

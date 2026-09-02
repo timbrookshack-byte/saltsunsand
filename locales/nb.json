@@ -564,7 +564,10 @@
       "out_of_stock_continue_selling": "På lager",
       "will_not_ship_until": "Klar til å sendes {{ date }}",
       "will_be_in_stock_after": "Tilbake på lager {{ date }}",
-      "waiting_for_stock": "Varelager på vei"
+      "waiting_for_stock": "Varelager på vei",
+      "pre_order_arriving": "Forhåndsbestilling — ankommer {{ date }}",
+      "pre_order_arriving_soon": "Forhåndsbestilling — ankommer snart",
+      "pre_order_available_count": "{{ count }} kan forhåndsbestilles"
     },
     "pickup_availability": {
       "title": "Tilgjengelighet for henting",
