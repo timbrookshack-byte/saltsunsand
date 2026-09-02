@@ -32,11 +32,6 @@
       assign is_preorder = true
     endif
   endif
-
-  assign show_preorder_cap = false
-  unless block.settings.show_inventory_quantity == 'none'
-    assign show_preorder_cap = true
-  endunless
 -%}
 <div
   class="product__inventory no-js-hidden{% if product_variant.inventory_management != 'shopify' and is_preorder == false %} sr-only{% endif %}"
@@ -51,7 +46,11 @@
     those units are on the shelf.
   {%- endcomment -%}
   {%- if is_preorder -%}
-    {%- render 'product-preorder', variant: product_variant, show_cap: show_preorder_cap -%}
+    {%- render 'product-preorder',
+      variant: product_variant,
+      quantity_display: block.settings.show_inventory_quantity,
+      threshold: block.settings.inventory_threshold
+    -%}
   {%- elsif product_variant.inventory_management == 'shopify' -%}
     {%- if product_variant.inventory_quantity > 0 -%}
       {%- if product_variant.inventory_quantity <= block.settings.inventory_threshold -%}

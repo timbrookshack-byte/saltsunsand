@@ -15,12 +15,14 @@
   @param {object} variant - Variant to describe. Falls back to the product's selected or first available variant.
   @param {object} [product] - Product, used only to resolve that fallback.
   @param {string} [display] - 'badge' for product cards, anything else for the full product-page notice.
-  @param {boolean} [show_cap] - Also show how many units are still available to pre-order.
+  @param {string} [quantity_display] - The block's show_inventory_quantity setting: 'none', 'low' or 'always'.
+  @param {number} [threshold] - The block's inventory_threshold. The pre-order count follows the same
+    rule as the in-stock count: shown once the allowance is at or below this, or always under 'always'.
   @param {boolean} [vertical_badges] - Match the orientation of the surrounding badge stack.
   @param {string} [class] - Extra classes for the badge form.
 
   @example
-  {% render 'product-preorder', variant: product.selected_or_first_available_variant, show_cap: true %}
+  {% render 'product-preorder', variant: product.selected_or_first_available_variant, quantity_display: 'low', threshold: 5 %}
 {%- enddoc -%}
 
 {%- liquid
@@ -47,6 +49,22 @@
   {%- liquid
     assign preorder_eta = preorder_variant.metafields.custom.next_po_date_360.value | date: '%-d %B %Y'
     assign preorder_cap = preorder_variant.metafields.custom.preorder_cap.value | plus: 0
+    assign preorder_threshold = threshold | default: 0
+
+    comment
+      Mirror the in-stock rule above this snippet's caller: a count is a
+      scarcity signal, so it appears only once the allowance is low enough to
+      be one ('low'), or whenever the merchant asks for it outright ('always').
+      A full container — 130 units — is not scarcity and reads as noise.
+    endcomment
+    assign show_count = false
+    if preorder_cap > 0
+      if quantity_display == 'always'
+        assign show_count = true
+      elsif quantity_display != 'none' and quantity_display != blank and preorder_cap <= preorder_threshold
+        assign show_count = true
+      endif
+    endif
 
     if preorder_eta != blank
       assign preorder_message = 'products.inventory.pre_order_arriving' | t: date: preorder_eta
@@ -68,7 +86,7 @@
         {%- render 'icon', icon: 'ellipse', size: 'xs', class: 'shrink-0' -%}
         <span class="text-sm font-medium leading-tight">
           {{- preorder_message -}}
-          {%- if show_cap and preorder_cap > 0 -%}
+          {%- if show_count -%}
             {{- ' ' -}}
             {{- 'products.inventory.pre_order_available_count' | t: count: preorder_cap -}}
           {%- endif -%}
