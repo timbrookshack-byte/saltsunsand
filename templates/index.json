@@ -279,6 +279,7 @@
         },
         "description_i9DKTa": {
           "type": "description",
+          "disabled": true,
           "settings": {
             "text_size": "text-base"
           }
