@@ -62,7 +62,7 @@
           "type": "ai_gen_block_c854048",
           "name": "Black Friday banner",
           "settings": {
-            "heading": "HALF YEARLY SALE",
+            "heading": "SUMMER LAUNCH SALE ON NOW",
             "subtext": "Up to 40% off sitewide - Free Shipping for orders over $100!",
             "max_width": 1200,
             "text_alignment": "center",
@@ -73,7 +73,7 @@
             "heading_size_mobile": 32,
             "subtext_size_mobile": 16,
             "padding_mobile": 20,
-            "background_color": "#0097b2",
+            "background_color": "#0085B2",
             "heading_color": "#ffffff",
             "subtext_color": "#ffffff",
             "accent_color": "#e11d48",
