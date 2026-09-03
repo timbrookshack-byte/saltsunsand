@@ -253,6 +253,105 @@
         "rounded": false
       }
     },
+    "featured_product_RcrBRN": {
+      "type": "featured-product",
+      "blocks": {
+        "title_MKzwPt": {
+          "type": "title",
+          "settings": {
+            "title_size": "product-title-md",
+            "title_size_mobile": "product-title-md",
+            "title_tag": "h2",
+            "show_price": true,
+            "show_rating": true
+          }
+        },
+        "variant_picker_wx6Lw7": {
+          "type": "variant_picker",
+          "settings": {
+            "enable_dynamic_variants": true,
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "color_swatch_type": "color",
+            "size_chart": ""
+          }
+        },
+        "description_i9DKTa": {
+          "type": "description",
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "buy_buttons_zmt7JN": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_price": false,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true,
+            "enable_back_in_stock": false,
+            "show_back_in_stock_name": false,
+            "show_back_in_stock_phone": false
+          }
+        },
+        "pickup_availability_VpTrY3": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "share_Kq9AFV": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share",
+            "show_help_desk": true,
+            "help_label": "Need help?",
+            "help_page": "",
+            "help_page_external": false
+          }
+        },
+        "read_more_QmF6Ud": {
+          "type": "read_more",
+          "settings": {}
+        },
+        "spinning_text_XfQqP9": {
+          "type": "spinning_text",
+          "settings": {
+            "text": "Featured product"
+          }
+        }
+      },
+      "block_order": [
+        "title_MKzwPt",
+        "variant_picker_wx6Lw7",
+        "description_i9DKTa",
+        "buy_buttons_zmt7JN",
+        "pickup_availability_VpTrY3",
+        "share_Kq9AFV",
+        "read_more_QmF6Ud",
+        "spinning_text_XfQqP9"
+      ],
+      "name": "t:sections.featured-product.name",
+      "settings": {
+        "product": "escape-pod-hanging-chair",
+        "enable_sticky_info": true,
+        "media_size": 66,
+        "gallery_layout": "thumbnail",
+        "thumbnail_position": "beside",
+        "image_ratio": "adapt_first",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_autoplay": false,
+        "enable_video_looping": false,
+        "mobile_layout": "partial",
+        "image_ratio_mobile": "adapt_first",
+        "mobile_thumbnail": false,
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "blocks_Q3Bqky": {
       "type": "_blocks",
       "blocks": {
@@ -724,6 +823,7 @@
     "1761865477be258271",
     "blocks_7bkRKB",
     "collection-list",
+    "featured_product_RcrBRN",
     "blocks_Q3Bqky",
     "featured-collections",
     "scrolling-text-1",
