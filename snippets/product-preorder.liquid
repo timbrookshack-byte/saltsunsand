@@ -88,13 +88,14 @@
   {%- case display -%}
     {%- when 'badge' -%}
       <span
-        class="badge badge--highlight badge--preorder{% if vertical_badges %} badge--vertical{% endif %}{% if class != blank %} {{ class }}{% endif %} flex items-center gap-1d5 font-medium leading-none rounded-full"
+        class="badge badge--preorder{% if vertical_badges %} badge--vertical{% endif %}{% if class != blank %} {{ class }}{% endif %} flex items-center gap-1d5 font-medium leading-none rounded-full"
+        style="--badge-background: rgb(var(--color-success-background));--badge-foreground: rgb(var(--color-success-text));"
         title="{{ preorder_message | escape }}"
       >
         {{- preorder_badge_label -}}
       </span>
     {%- else -%}
-      <div class="alert alert--info inline-flex items-center gap-3">
+      <div class="alert alert--success inline-flex items-center gap-3">
         {%- render 'icon', icon: 'ellipse', size: 'xs', class: 'shrink-0' -%}
         <span class="text-sm font-medium leading-tight">
           {{- preorder_message -}}
