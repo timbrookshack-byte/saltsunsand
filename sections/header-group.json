@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "sale",
-            "text": "SUMMER LAUNCH SALE!<strong>!</strong> - UP TO 40% OFF WITH FREE SHIPPING for orders over $100",
+            "text": "SUMMER COLLECTIONS 26/27 SALE!<strong>!</strong> - UP TO 40% OFF WITH FREE SHIPPING for orders over $100",
             "link": "",
             "hide_icon_mobile": false,
             "text_mobile": "",
@@ -43,7 +43,7 @@
         "direction": "left",
         "speed": 20,
         "color_text": "#fafafa",
-        "color_background": "#0085B2",
+        "color_background": "#00B2A6",
         "gradient_background": "",
         "color_highlight": "#ffddbf",
         "gradient_highlight": "",
