@@ -30,7 +30,7 @@
             "title_size_mobile": "product-title-md",
             "title_tag": "h1",
             "show_price": true,
-            "show_rating": true
+            "show_rating": false
           }
         },
         "ryviu_product_reviews_ryviu_total_r7j4h8": {
@@ -38,7 +38,7 @@
           "settings": {
             "layout_style": "product",
             "show_when_no_reviews": true,
-            "show_average_rating": false
+            "show_average_rating": true
           }
         },
         "description": {

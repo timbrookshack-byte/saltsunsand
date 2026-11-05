@@ -30,7 +30,7 @@
             "title_size_mobile": "product-title-md",
             "title_tag": "h1",
             "show_price": true,
-            "show_rating": true
+            "show_rating": false
           }
         },
         "description": {
