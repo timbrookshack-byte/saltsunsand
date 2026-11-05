@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "sale",
-            "text": "SUMMER COLLECTIONS 26/27 SALE!<strong>!</strong> - UP TO 40% OFF WITH FREE SHIPPING for orders over $100",
+            "text": "<strong>BLACK FRIDAY SALE IS LIVE</strong> - UP TO 40% OFF WITH FREE SHIPPING for orders over $100",
             "link": "",
             "hide_icon_mobile": false,
             "text_mobile": "",
@@ -43,7 +43,7 @@
         "direction": "left",
         "speed": 20,
         "color_text": "#fafafa",
-        "color_background": "#00B2A6",
+        "color_background": "#070707",
         "gradient_background": "",
         "color_highlight": "#ffddbf",
         "gradient_highlight": "",
