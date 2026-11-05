@@ -44,8 +44,11 @@
           "type": "shopify://apps/ryviu-product-reviews/blocks/ryviu-total/807ad6ed-1a6a-4559-abea-ed062858d9da",
           "settings": {
             "layout_style": "product",
+            "alignment": "default",
             "show_when_no_reviews": true,
-            "show_average_rating": true
+            "show_average_rating": true,
+            "use_translation_template": true,
+            "custom_template": "Rated {rating} \"Excellent\" | {count}+ Reviews"
           }
         },
         "countdown": {
@@ -81,7 +84,7 @@
         "liquid_RV3BJD": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"margin: 14px 0 18px 0;\">\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; line-height: 1.4;\">\n    <span style=\"font-size: 16px;\">⭐</span>\n    <span style=\"font-size: 14px; font-weight: 500;\">10,000+ Happy Australian outdoor customers</span>\n  </div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; line-height: 1.4;\">\n    <span style=\"font-size: 16px;\">✅</span>\n    <span style=\"font-size: 14px; font-weight: 500;\">20+ Years Experience in Outdoors</span>\n  </div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; line-height: 1.4;\">\n    <span style=\"font-size: 16px;\">🚚</span>\n    <span style=\"font-size: 14px; font-weight: 500;\">Fast dispatch from Brisbane</span>\n  </div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; line-height: 1.4;\">\n    <span style=\"font-size: 16px;\">🔁</span>\n    <span style=\"font-size: 14px; font-weight: 500;\">14 Day Money Bank Guarantee for peace of mind</span>\n  </div>\n</div>"
+            "liquid": "<div style=\"margin: 14px 0 18px 0;\">\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; line-height: 1.4;\">\n    <span style=\"font-size: 16px;\">⭐</span>\n    <span style=\"font-size: 14px; font-weight: 500;\">10,000+ Happy Australian outdoor customers</span>\n  </div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; line-height: 1.4;\">\n    <span style=\"font-size: 16px;\">✅</span>\n    <span style=\"font-size: 14px; font-weight: 500;\">20+ Years Experience in Outdoors</span>\n  </div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; line-height: 1.4;\">\n    <span style=\"font-size: 16px;\">🚚</span>\n    <span style=\"font-size: 14px; font-weight: 500;\">Fast dispatch from Brisbane</span>\n  </div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; line-height: 1.4;\">\n    <span style=\"font-size: 16px;\">🔁</span>\n    <span style=\"font-size: 14px; font-weight: 500;\">14 Day Money Back Guarantee for peace of mind</span>\n  </div>\n</div>"
           }
         },
         "black_friday_promo": {
@@ -882,12 +885,15 @@
           "type": "shopify://apps/ryviu-product-reviews/blocks/ryviu-widget/807ad6ed-1a6a-4559-abea-ed062858d9da",
           "settings": {
             "layout": "",
+            "layout_tablet": "",
+            "layout_mobile": "",
             "r_wapper_class": "",
             "r_max_width": 1920,
             "r_padding_block": 0,
             "hide_when_no_reviews": false,
             "one_col_on_mobile": false,
-            "hide_title_image_form": false
+            "hide_title_image_form": false,
+            "enable_schema": false
           }
         }
       },
