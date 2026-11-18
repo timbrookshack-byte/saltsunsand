@@ -97,6 +97,11 @@
     Black is the campaign's own colour, as on the homepage banner, so the tag
     is hard-coded rather than themed: it should not invert with a colour
     scheme. White on black clears contrast at any size.
+
+    The shipping offer is a chip, not a line of terms. It is half of what the
+    shopper is being offered, so it carries the same weight as the saving and
+    sits above the deadline; in the muted terms line it read as fine print and
+    the offer looked like one benefit instead of two.
   {%- endcomment -%}
   <div class="bf-promo" style="margin-block-start: var(--sp-2d5);">
     <span
@@ -104,22 +109,27 @@
     >
       {{- 'Black Friday Sale' -}}
     </span>
-    <p
-      class="text-sm font-bold leading-tight"
-      style="margin: var(--sp-2) 0 0 0; color: rgb(var(--color-success-text));"
-    >
-      {%- if bf_on_sale -%}
+
+    {%- if bf_on_sale -%}
+      <p
+        class="text-sm font-bold leading-tight"
+        style="margin: var(--sp-2) 0 0 0; color: rgb(var(--color-success-text));"
+      >
         You&rsquo;re saving {{ bf_saved_money }} ({{ bf_saved_pct }}%) on this item
-      {%- else -%}
-        {{ bf_shipping }}
-      {%- endif -%}
+      </p>
+    {%- endif -%}
+
+    <p style="margin: var(--sp-1d5) 0 0 0;">
+      <span
+        class="text-sm font-bold leading-tight"
+        style="display: inline-block; background: rgb(var(--color-success-background)); color: rgb(var(--color-success-text)); padding: 5px 10px; border-radius: 4px;"
+      >
+        {{- bf_shipping -}}
+      </span>
     </p>
-    <p class="text-opacity text-xs font-medium leading-tight" style="margin: var(--sp-1) 0 0 0;">
-      {%- if bf_on_sale -%}
-        {{ bf_shipping }} &middot; ends Monday 30 Nov
-      {%- else -%}
-        ends Monday 30 Nov
-      {%- endif -%}
+
+    <p class="text-opacity text-xs font-medium leading-tight" style="margin: var(--sp-1d5) 0 0 0;">
+      {{- 'ends Monday 30 Nov' -}}
     </p>
   </div>
 {%- endif -%}
