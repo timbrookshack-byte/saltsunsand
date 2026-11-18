@@ -12,10 +12,12 @@
   "Save" figure, down to the currency-code setting and the round, so the two
   numbers on the page can never disagree. Keep them in step.
 
-  Two lines, not one: the benefit carries the weight and the terms sit under it
-  muted. A single sentence holding saving, shipping, threshold and deadline ran
-  to four lines on a phone directly above the add-to-cart button, where the
-  shopper is deciding, and the saving had to be read out of the middle of it.
+  Three tiers, not one sentence: a black campaign tag, then the benefit in
+  bold, then the terms muted beneath it. A single sentence holding saving,
+  shipping, threshold and deadline ran to four lines on a phone directly above
+  the add-to-cart button, where the shopper is deciding, and the saving had to
+  be read out of the middle of it. The tag carries the campaign name, so the
+  terms line does not repeat it.
 
   CAMPAIGN COPY, ends 30 November 2026. It hides itself after that date, so a
   stale "Ends Monday 30 Nov" cannot outlive the sale, but still delete this
@@ -91,10 +93,20 @@
       assign bf_saved_pct = bf_saved_value | times: 100.0 | divided_by: bf_compare_at | round
     endif
   -%}
+  {%- comment -%}
+    Black is the campaign's own colour, as on the homepage banner, so the tag
+    is hard-coded rather than themed: it should not invert with a colour
+    scheme. White on black clears contrast at any size.
+  {%- endcomment -%}
   <div class="bf-promo" style="margin-block-start: var(--sp-2d5);">
+    <span
+      style="display: inline-block; background: #000000; color: #ffffff; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 4px 8px; border-radius: 4px; line-height: 1.2;"
+    >
+      {{- 'Black Friday Sale' -}}
+    </span>
     <p
       class="text-sm font-bold leading-tight"
-      style="margin: 0; color: rgb(var(--color-success-text));"
+      style="margin: var(--sp-2) 0 0 0; color: rgb(var(--color-success-text));"
     >
       {%- if bf_on_sale -%}
         You&rsquo;re saving {{ bf_saved_money }} ({{ bf_saved_pct }}%) on this item
@@ -104,9 +116,9 @@
     </p>
     <p class="text-opacity text-xs font-medium leading-tight" style="margin: var(--sp-1) 0 0 0;">
       {%- if bf_on_sale -%}
-        {{ bf_shipping }} &middot; Black Friday ends Monday 30 Nov
+        {{ bf_shipping }} &middot; ends Monday 30 Nov
       {%- else -%}
-        Black Friday ends Monday 30 Nov
+        ends Monday 30 Nov
       {%- endif -%}
     </p>
   </div>
