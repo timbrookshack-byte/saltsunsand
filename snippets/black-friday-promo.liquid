@@ -12,11 +12,14 @@
   "Save" figure, down to the currency-code setting and the round, so the two
   numbers on the page can never disagree. Keep them in step.
 
-  CAMPAIGN COPY, ends 30 November 2026. The dates are deliberately literal
-  rather than locale keys: the offer is single-run English copy, and keys would
-  need a matching entry in all 32 locale files to satisfy theme check while
-  Shopify already falls back to English. Delete this snippet and its two
-  render tags in main-product.liquid when the sale ends.
+  Two lines, not one: the benefit carries the weight and the terms sit under it
+  muted. A single sentence holding saving, shipping, threshold and deadline ran
+  to four lines on a phone directly above the add-to-cart button, where the
+  shopper is deciding, and the saving had to be read out of the middle of it.
+
+  CAMPAIGN COPY, ends 30 November 2026. It hides itself after that date, so a
+  stale "Ends Monday 30 Nov" cannot outlive the sale, but still delete this
+  snippet and its two render tags in main-product.liquid once the sale is over.
 
   @param {object} product - Product to describe.
   @param {object} [variant] - Variant to price. Defaults to the product's selected or first available.
@@ -29,6 +32,11 @@
   assign bf_target = variant | default: product.selected_or_first_available_variant
 
   comment
+    Free shipping is an order-level threshold, in cents to match variant.price.
+  endcomment
+  assign bf_free_shipping_min = 10000
+
+  comment
     A gift card is not part of a sitewide discount and ships nothing, so
     neither half of the message is true of one.
   endcomment
@@ -37,6 +45,17 @@
     assign bf_show = false
   endif
   if bf_target == blank
+    assign bf_show = false
+  endif
+
+  comment
+    Self-expire at the end of 30 Nov, Brisbane (UTC+10, no DST). Fails open if
+    the date cannot be parsed: showing the offer a little long during the sale
+    beats hiding a live offer because of a filter quirk.
+  endcomment
+  assign bf_now = 'now' | date: '%s' | plus: 0
+  assign bf_ends = '2026-12-01T00:00:00+10:00' | date: '%s' | plus: 0
+  if bf_ends > 0 and bf_now > bf_ends
     assign bf_show = false
   endif
 -%}
@@ -51,6 +70,17 @@
       assign bf_on_sale = true
     endif
 
+    comment
+      Where the item alone already clears the threshold, say the shipping is
+      included rather than restating a condition the shopper has already met.
+      Below it, naming the threshold is both accurate and a reason to add more.
+    endcomment
+    if bf_price >= bf_free_shipping_min
+      assign bf_shipping = 'Free shipping included'
+    else
+      assign bf_shipping = 'Free shipping on orders over $100'
+    endif
+
     if bf_on_sale
       assign bf_saved_value = bf_compare_at | minus: bf_price
       if settings.currency_code_enabled
@@ -61,14 +91,23 @@
       assign bf_saved_pct = bf_saved_value | times: 100.0 | divided_by: bf_compare_at | round
     endif
   -%}
-  <p
-    class="bf-promo text-sm font-medium leading-tight"
-    style="margin-block-start: var(--sp-2d5); color: rgb(var(--color-success-text));"
-  >
-    {%- if bf_on_sale -%}
-      Black Friday Sale - You&rsquo;re saving {{ bf_saved_money }} ({{ bf_saved_pct }}%) on this item + FREE SHIPPING. Ends Monday 30 Nov &mdash; or when stock runs out.
-    {%- else -%}
-      Black Friday FREE SHIPPING. Ends Monday 30 Nov &mdash; or when stock runs out.
-    {%- endif -%}
-  </p>
+  <div class="bf-promo" style="margin-block-start: var(--sp-2d5);">
+    <p
+      class="text-sm font-bold leading-tight"
+      style="margin: 0; color: rgb(var(--color-success-text));"
+    >
+      {%- if bf_on_sale -%}
+        You&rsquo;re saving {{ bf_saved_money }} ({{ bf_saved_pct }}%) on this item
+      {%- else -%}
+        {{ bf_shipping }}
+      {%- endif -%}
+    </p>
+    <p class="text-opacity text-xs font-medium leading-tight" style="margin: var(--sp-1) 0 0 0;">
+      {%- if bf_on_sale -%}
+        {{ bf_shipping }} &middot; Black Friday ends Monday 30 Nov
+      {%- else -%}
+        Black Friday ends Monday 30 Nov
+      {%- endif -%}
+    </p>
+  </div>
 {%- endif -%}
