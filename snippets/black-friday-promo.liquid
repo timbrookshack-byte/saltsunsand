@@ -1,0 +1,74 @@
+{%- doc -%}
+  Renders the Black Friday offer line for a product: the shopper's saving when
+  the variant is discounted, and the shipping offer alone when it is not.
+
+  Rendered inside the section's `Price-{section}-{product}` element on purpose.
+  On a variant change theme.js re-fetches the section and swaps only a fixed
+  list of regions by id — Price among them, a custom block not. Anywhere else
+  the saving would keep the previous variant's figure after a switch, which is
+  a wrong discount claim rather than a cosmetic bug.
+
+  The saving is computed exactly as product-price.liquid computes its own
+  "Save" figure, down to the currency-code setting and the round, so the two
+  numbers on the page can never disagree. Keep them in step.
+
+  CAMPAIGN COPY, ends 30 November 2026. The dates are deliberately literal
+  rather than locale keys: the offer is single-run English copy, and keys would
+  need a matching entry in all 32 locale files to satisfy theme check while
+  Shopify already falls back to English. Delete this snippet and its two
+  render tags in main-product.liquid when the sale ends.
+
+  @param {object} product - Product to describe.
+  @param {object} [variant] - Variant to price. Defaults to the product's selected or first available.
+
+  @example
+  {% render 'black-friday-promo', product: product %}
+{%- enddoc -%}
+
+{%- liquid
+  assign bf_target = variant | default: product.selected_or_first_available_variant
+
+  comment
+    A gift card is not part of a sitewide discount and ships nothing, so
+    neither half of the message is true of one.
+  endcomment
+  assign bf_show = true
+  if product.gift_card?
+    assign bf_show = false
+  endif
+  if bf_target == blank
+    assign bf_show = false
+  endif
+-%}
+
+{%- if bf_show -%}
+  {%- liquid
+    assign bf_compare_at = bf_target.compare_at_price
+    assign bf_price = bf_target.price
+
+    assign bf_on_sale = false
+    if bf_compare_at > bf_price
+      assign bf_on_sale = true
+    endif
+
+    if bf_on_sale
+      assign bf_saved_value = bf_compare_at | minus: bf_price
+      if settings.currency_code_enabled
+        assign bf_saved_money = bf_saved_value | money_with_currency
+      else
+        assign bf_saved_money = bf_saved_value | money
+      endif
+      assign bf_saved_pct = bf_saved_value | times: 100.0 | divided_by: bf_compare_at | round
+    endif
+  -%}
+  <p
+    class="bf-promo text-sm font-medium leading-tight"
+    style="margin-block-start: var(--sp-2d5); color: rgb(var(--color-success-text));"
+  >
+    {%- if bf_on_sale -%}
+      Black Friday Sale - You&rsquo;re saving {{ bf_saved_money }} ({{ bf_saved_pct }}%) on this item + FREE SHIPPING. Ends Monday 30 Nov &mdash; or when stock runs out.
+    {%- else -%}
+      Black Friday FREE SHIPPING. Ends Monday 30 Nov &mdash; or when stock runs out.
+    {%- endif -%}
+  </p>
+{%- endif -%}
